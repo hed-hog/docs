@@ -8,6 +8,11 @@ const sidebars: SidebarsConfig = {
       id: "tutorial/getting-started",
     },
     {
+      type: "doc",
+      label: "Folder Structure",
+      id: "structure/folder-structure",
+    },
+    {
       type: "category",
       label: "CLI Commands",
       items: [

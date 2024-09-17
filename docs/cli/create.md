@@ -2,6 +2,8 @@
 
 The `hedhog create` command is used to generate a new HedHog project from scratch. This command sets up the basic structure, including necessary dependencies and configurations, allowing you to start development immediately.
 
+---
+
 #### Usage:
 
 ```bash

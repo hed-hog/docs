@@ -2,6 +2,8 @@
 
 The `hedhog new` command is used to generate a new Hedhog project with customizable options, including package management, database configuration, and [**Git**](https://git-scm.com/about) repository setup. It offers several flags to control how the project is initialized, making it flexible for different development environments.
 
+---
+
 #### Usage
 
 ```bash

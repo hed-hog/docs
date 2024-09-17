@@ -2,6 +2,8 @@
 
 The `hedhog add` command allows you to integrate new modules into your HedHog project with ease. Whether you need to add a pagination feature, an authentication module, or any other functionality, this command helps you expand your project’s capabilities quickly.
 
+---
+
 #### Usage:
 
 ```bash

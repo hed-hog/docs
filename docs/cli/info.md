@@ -2,6 +2,8 @@
 
 The `hedhog info` command provides detailed information about your system and HedHog environment. This includes OS and [**Node.js**](https://nodejs.org) versions, as well as details about the HedHog CLI itself. It’s an essential tool for troubleshooting and ensuring your setup meets the necessary requirements.
 
+---
+
 #### Usage:
 
 ```bash
