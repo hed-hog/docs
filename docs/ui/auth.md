@@ -1,6 +1,8 @@
 # Auth
 
-> **Warning:** Some components may only work if user is authenticated. Please use this page to authenticate yourself.
+:::warning
+**Warning:** Some components may only work if user is authenticated. Please use this page to authenticate yourself.
+:::
 
 If you prefer, you can use this default account below:
 

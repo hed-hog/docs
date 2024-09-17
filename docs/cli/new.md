@@ -33,6 +33,21 @@ hedhog new my-hedhog-project --database postgres --skip-git --package-manager ya
 
 This command creates a new Hedhog project named `my-hedhog-project`, sets the database type to `postgres`, skips git initialization, and uses `yarn` as the package manager.
 
+#### Prompt Questions
+
+When running the `hedhog new` command, several prompts may be displayed to gather necessary information for setting up a new project. Below is a list of these prompts, their meanings, and the conditions under which each prompt will be displayed.
+
+| **Prompt Question**                                               | **Meaning**                                                                                 | **Condition**                                                                                     | **Choices / Default**                               |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------------------------------------------------- |
+| `The directory [name] is not empty. Do you want to overwrite it?` | Asks whether to overwrite an existing, non-empty directory to prevent accidental data loss. | Appears if the specified directory exists and is not empty, and the `force` option is not `true`. | Choices: `yes`, `no`                                |
+| `Select database type to use in project`                          | Allows selection of the database type for the project setup.                                | Appears if the `database` option is not provided.                                                 | Choices: `postgres`, `mysql`                        |
+| `Enter database host`                                             | Requests the host address for the database connection.                                      | Appears if the `dbhost` option is not provided.                                                   | Default: `localhost`                                |
+| `Enter database port`                                             | Requests the port number for the database connection.                                       | Appears if the `dbport` option is not provided.                                                   | Default Values: `5432` (PostgreSQL), `3306` (MySQL) |
+| `Enter database user`                                             | Asks for the username to access the database.                                               | Appears if the `dbuser` option is not provided.                                                   | Default: `hedhog`                                   |
+| `Enter database password`                                         | Requests the password for the database user.                                                | Appears if the `dbpassword` option is not provided.                                               | Default: `changeme`                                 |
+| `Enter database name`                                             | Asks for the name of the database to be used.                                               | Appears if the `dbname` option is not provided.                                                   | Default: `hedhog`                                   |
+| `Would you like to use docker for create a database?`             | Inquires if Docker should be used for setting up and managing the database environment.     | Appears if database credentials are invalid and if Docker is installed.                           | Choices: `yes`, `no`                                |
+
 #### Why it's useful?
 
 - **Customizable Setup**: Control the project setup with options for skipping git initialization, skipping package installation, and selecting the package manager.
