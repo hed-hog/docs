@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: docs
-  namespace: hedhog
+  name: hedhog-docs
+  namespace: hcode
   labels:
-    app: docs
+    app: hedhog-docs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: docs
+      app: hedhog-docs
   strategy:
     rollingUpdate:
       maxSurge: 5
@@ -18,7 +18,7 @@ spec:
   template:
     metadata:
       labels:
-        app: docs
+        app: hedhog-docs
     spec:
       affinity:
         podAntiAffinity:
@@ -30,10 +30,10 @@ spec:
                     - key: app
                       operator: In
                       values:
-                        - docs
+                        - hedhog-docs
                 topologyKey: kubernetes.io/hostname
       containers:
-        - name: docs
+        - name: hedhog-docs
           image: <IMAGE>
           resources:
             limits:
@@ -45,21 +45,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: docs-service
-  namespace: hedhog
+  name: hedhog-docs-service
+  namespace: hcode
 spec:
   type: ClusterIP
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: docs
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: proxy-hedhog-service
-  namespace: hcode
-spec:
-  type: ExternalName
-  externalName: docs-service.hedhog.svc.cluster.local
+    app: hedhog-docs
