@@ -1,3 +1,5 @@
+> **Warning:** Some components may only work if user is authenticated. Please make sure you are authenticated by visiting [this link](http://localhost:3000/docs/ui/auth).
+
 # Introduction to Hedhog UI
 
 Welcome to HedHog, a comprehensive library of specialized components designed for building efficient and scalable administrative interfaces. Our components are crafted to streamline your workflow and enhance the management of your admin panel. Here’s an overview of the components available in HedHog:

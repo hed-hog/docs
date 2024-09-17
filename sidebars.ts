@@ -6,7 +6,14 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "HedHog CLI Commands",
-      items: ["cli/introduction", "cli/add", "cli/create", "cli/info"],
+      items: [
+        "cli/introduction",
+        "cli/add",
+        "cli/create",
+        "cli/info",
+        "cli/new",
+        "cli/start",
+      ],
     },
     {
       type: "category",
