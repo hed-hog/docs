@@ -8,7 +8,7 @@ The HedHog CLI is a powerful tool designed to streamline your development proces
 
 - **[hedhog info](/docs/cli/hedhog-info)**: Displays system and project information.
 - **[hedhog add](/docs/cli/hedhog-add)**: Adds a new module to your HedHog project.
-- **[hedhog create](/docs//cli/hedhog-create)**: Generates a new HedHog project.
+- **[hedhog create](/docs/cli/hedhog-create)**: Generates a new HedHog project.
 
 ---
 
