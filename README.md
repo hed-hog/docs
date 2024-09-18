@@ -1,41 +1,30 @@
-# Website
+# HedHog Documentation Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the source code for the **HedHog** framework documentation website, built with **Docusaurus**. The website serves as the official documentation for developers using HedHog. It covers the framework's features, usage examples, and technical details.
 
-### Installation
+## About
 
+The **HedHog** documentation website is hosted online and provides a comprehensive guide for using the HedHog framework. It is designed to be user-friendly, with clear sections and examples, making it easy for developers to get started and explore advanced features.
+
+## Folder Structure
+
+Below is the folder structure of the project:
+
+```plaintext
+hedhog-docs/
+├── docs/                # Markdown files for each section of the documentation
+├── src/                 # Source files for custom components and styling
+│   ├── components/      # Reusable React components for the website
+│   ├── css/             # Custom CSS for styling the documentation
+│   └── pages/           # Custom pages for the website
+├── static/              # Static assets (images, fonts, etc.)
+├── .gitignore           # Files and directories to be ignored by Git
+├── babel.config.js      # Babel configuration for JavaScript/TypeScript transpilation
+├── Dockerfile           # Docker configuration for containerizing the site
+├── docusaurus.config.ts  # Main configuration file for the Docusaurus site
+├── package-lock.json    # Automatically generated file managing dependency versions
+├── package.json         # Dependencies and scripts for building and running the site
+├── README.md            # Documentation for the repository
+├── sidebars.ts          # Configuration for the sidebar menu structure
+└── tsconfig.json        # TypeScript configuration file
 ```
-$ yarn
-```
-
-### Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
