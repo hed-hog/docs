@@ -17,6 +17,7 @@ Below is the folder structure of the project:
 ```plaintext
 hedhog-docs/
 ├── docs/                # Markdown files for each section of the documentation
+├── k8s/                 # Kubernetes kluster configs for the website hosting
 ├── src/                 # Source files for custom components and styling
 │   ├── components/      # Reusable React components for the website
 │   ├── css/             # Custom CSS for styling the documentation
