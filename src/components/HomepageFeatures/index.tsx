@@ -10,38 +10,44 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Flexibility and Control',
+    Svg: require('@site/static/img/developer-layers.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        HedHog's robust headless API and intuitive admin panel enable efficient
+        management of data and functionalities, offering flexibility for
+        platform integration and system customization while maintaining control
+        and ease of use.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Focus on Business',
+    Svg: require('@site/static/img/business-vision.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Designed to help companies focus on what truly matters, the framework
+        reduces coding complexity, simplifying development. This enables teams
+        to concentrate their efforts on business strategies and growth without
+        getting lost in technical details.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Open Source',
+    Svg: require('@site/static/img/open-source.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        As a fully Open Source framework, it allows anyone to access, modify,
+        and contribute to its ongoing development. This promotes innovation,
+        builds a strong community, and ensures continuous evolution based on
+        real user needs.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
