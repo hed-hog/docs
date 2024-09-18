@@ -1,6 +1,10 @@
-# HedHog Documentation Website
+# <p align="center">HedHog Documentation Website</p>
 
-This repository contains the source code for the **HedHog** framework documentation website, built with **Docusaurus**. The website serves as the official documentation for developers using HedHog. It covers the framework's features, usage examples, and technical details.
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/177489127?s=200&v=4" alt="Hedhog Avatar" />
+</p>
+
+This repository contains the source code for the **HedHog** framework documentation website, built with [**Docusaurus**](https://docusaurus.io/). The website serves as the official documentation for developers using HedHog. It covers the framework's features, usage examples, and technical details.
 
 ## About
 
