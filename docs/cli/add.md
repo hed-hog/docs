@@ -31,15 +31,11 @@ This adds the pagination module to your project.
 
 ### Available Hedhog Modules
 
-| Name           | Description                                                                                 |
-| -------------- | ------------------------------------------------------------------------------------------- |
-| **auth**       | Manages authentication processes, including login, registration, and tokens.                |
-| **file**       | Provides file management capabilities, such as file uploads and storage.                    |
-| **mail**       | Handles sending emails, including templating and SMTP configuration.                        |
-| **menu**       | Allows for the creation and management of application menus.                                |
-| **pagination** | Provides pagination support for lists and data views.                                       |
-| **permission** | Controls access and permissions for various user roles.                                     |
-| **prisma**     | Integrates [**Prisma**](https://www.prisma.io/) ORM for database management and migrations. |
-| **screen**     | Manages screen layouts and configurations for UI display.                                   |
-| **setting**    | Allows for configuring application settings and preferences.                                |
-| **user**       | Manages user profiles, roles, and user-specific settings.                                   |
+| Name           | Description                                                                                                |
+| -------------- | ---------------------------------------------------------------------------------------------------------- |
+| **admin**      | Provides administrative functionalities, including auth, menu, role, routes, screens, and user management. |
+| **file**       | Provides file management capabilities, such as file uploads and storage.                                   |
+| **mail**       | Handles sending emails, including templating and SMTP configuration.                                       |
+| **pagination** | Provides pagination support for lists and data views.                                                      |
+| **prisma**     | Integrates [**Prisma**](https://www.prisma.io/) ORM for database management and migrations.                |
+| **setting**    | Allows for configuring application settings and preferences.                                               |
