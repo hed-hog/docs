@@ -33,9 +33,8 @@ This adds the pagination module to your project.
 
 | Name           | Description                                                                                                |
 | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| **admin**      | Provides administrative functionalities, including auth, menu, role, routes, screens, and user management. |
+| **admin**      | Provides admin functionalities, including auth, menu, role, routes, screens, settings and user management. |
 | **file**       | Provides file management capabilities, such as file uploads and storage.                                   |
 | **mail**       | Handles sending emails, including templating and SMTP configuration.                                       |
 | **pagination** | Provides pagination support for lists and data views.                                                      |
 | **prisma**     | Integrates [**Prisma**](https://www.prisma.io/) ORM for database management and migrations.                |
-| **setting**    | Allows for configuring application settings and preferences.                                               |
