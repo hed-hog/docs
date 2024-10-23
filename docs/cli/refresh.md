@@ -4,13 +4,13 @@ The `hedhog refresh` command is used to refresh the project's configuration and 
 
 ---
 
-#### Usage:
+#### 🚀 Usage:
 
 ```bash
 hedhog refresh
 ```
 
-#### Output Example
+#### 📋 Output Example
 
 ```bash
 Updated package.json and removed @hedhog dependencies (except @hedhog/prisma).
@@ -19,7 +19,7 @@ Deleted package-lock.json.
 Adding dependency <name>...
 ```
 
-#### Why it's useful?
+#### ❓ Why it's useful?
 
 - **Configuration Updates**: Automatically updates the project's configuration files to reflect any changes made in the environment or dependencies.
 - **Dependency Management**: Ensures that all project dependencies are synchronized and compatible with the current setup.

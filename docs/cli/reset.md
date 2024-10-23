@@ -4,13 +4,13 @@ The `hedhog reset` command is used to redefine and reset the Hedhog project by r
 
 ---
 
-#### Usage
+#### 🚀 Usage
 
 ```bash
 hedhog reset <dependency> [options]
 ```
 
-#### Output Example
+#### 📋 Output Example
 
 ```bash
 Resetting the project...
@@ -24,14 +24,14 @@ Resetting the project...
 Project reset successfully.
 ```
 
-#### Why it's useful?
+#### ❓ Why it's useful?
 
 - **Clean Slate**: Removes all additional Hedhog dependencies (except essential ones like @hedhog/prisma) and their related migrations, providing a fresh start for the project.
 - **Recreate Key Files**: Rebuilds important files such as the app.module.ts, [**Prisma**](https://www.prisma.io/) schema, and .env, ensuring that the project is properly configured.
 - **Database Reset**: Drops and recreates the project database, ensuring a clean state for further development or testing.
 - **Troubleshooting**: Useful for addressing issues related to dependency conflicts, migrations, or broken configurations by resetting everything to default.
 
-#### Steps Performed by the Command:
+#### 📝 Steps Performed by the Command:
 
 - **Check for Valid Project**: Verifies if the directory is a Hedhog project.
 - **Remove Migrations**: Clears the existing migrations and recreates the migration folder.

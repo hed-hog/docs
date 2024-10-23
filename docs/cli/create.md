@@ -4,13 +4,13 @@ The `hedhog create` command is used to generate a new HedHog project from scratc
 
 ---
 
-#### Usage:
+#### 🚀 Usage:
 
 ```bash
 hedhog create <library-name> [options]
 ```
 
-#### Options:
+#### ⚙️ Options:
 
 - **--silent-complete**: Skip the completion message after the module is added.
 - **-r, --remove-default-deps**: Remove the default dependencies.
@@ -18,13 +18,13 @@ hedhog create <library-name> [options]
 - **-t, --table &lt;string&gt;**: Specify the table name.
 - **-f, --fields &lt;fields...&gt;**: Fields for the migration in the format field:type:length or field:fk:table:column.
 
-#### Why it's useful?
+#### ❓ Why it's useful?
 
 - **Project Initialization**: Quickly initialize a new project with a standardized setup, reducing manual configuration efforts.
 - **Customization**: Offers options to tailor the project setup according to your needs, such as removing default dependencies or specifying a package manager.
 - **Consistency**: Ensures that new projects adhere to best practices and have a consistent structure.
 
-#### Example
+#### 📋 Example
 
 ```bash
 hedhog create user-management --table users --fields id:int:10 name:string:255

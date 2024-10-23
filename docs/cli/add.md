@@ -4,17 +4,17 @@ The `hedhog add` command allows you to integrate new modules into your HedHog pr
 
 ---
 
-#### Usage:
+#### 🚀 Usage:
 
 ```bash
 hedhog add <module> [options]
 ```
 
-#### Options:
+#### ⚙️ Options:
 
 - **--silent-complete**: Skip the completion message after the module is added.
 
-#### Example
+#### 📋 Example
 
 ```bash
 hedhog add pagination
@@ -22,7 +22,7 @@ hedhog add pagination
 
 This adds the pagination module to your project.
 
-#### Why it’s useful?
+#### ❓ Why it’s useful?
 
 - **Modular Expansion**: Quickly add new features or modules to your project without manual configuration.
 - **Efficiency**: Saves time by automating the process of module integration.

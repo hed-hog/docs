@@ -4,13 +4,13 @@ The `hedhog new` command is used to generate a new Hedhog project with customiza
 
 ---
 
-#### Usage
+#### 🚀 Usage
 
 ```bash
 hedhog new <project-name> [options]
 ```
 
-#### Options
+#### ⚙️ Options
 
 | Option                        | Description                                                      | Default |
 | ----------------------------- | ---------------------------------------------------------------- | ------- |
@@ -27,7 +27,7 @@ hedhog new <project-name> [options]
 | `-f, --force`                 | Force project creation if the directory already exists.          | `false` |
 | `-c, --docker-compose`        | Create a `docker-compose` file if the database connection fails. | `false` |
 
-#### Example
+#### 📋 Example
 
 ```bash
 hedhog new my-hedhog-project --database postgres --skip-git --package-manager yarn
@@ -35,7 +35,7 @@ hedhog new my-hedhog-project --database postgres --skip-git --package-manager ya
 
 This command creates a new Hedhog project named `my-hedhog-project`, sets the database type to `postgres`, skips git initialization, and uses `yarn` as the package manager.
 
-#### Prompt Questions
+#### 💬 Prompt Questions
 
 When running the `hedhog new` command, several prompts may be displayed to gather necessary information for setting up a new project. Below is a list of these prompts, their meanings, and the conditions under which each prompt will be displayed.
 
@@ -50,7 +50,7 @@ When running the `hedhog new` command, several prompts may be displayed to gathe
 | `Enter database name`                                             | Asks for the name of the database to be used.                                                                          | Appears if the `dbname` option is not provided.                                                        | Default: `hedhog`                                                                                                    |
 | `Would you like to use docker for create a database?`             | Inquires if [**Docker**](https://www.docker.com/) should be used for setting up and managing the database environment. | Appears if database credentials are invalid and if [**Docker**](https://www.docker.com/) is installed. | Choices: `yes`, `no`                                                                                                 |
 
-#### Why it's useful?
+#### ❓ Why it's useful?
 
 - **Customizable Setup**: Control the project setup with options for skipping git initialization, skipping package installation, and selecting the package manager.
 - **Database Support**: Specify different database configurations, including host, port, user, and password. Supports both [**PostgreSQL**](https://www.postgresql.org/) and [**MySQL**](https://www.mysql.com/).

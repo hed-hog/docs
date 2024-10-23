@@ -13,7 +13,7 @@ The HedHog CLI is a powerful tool designed to streamline your development proces
 
 ---
 
-## Need more help?
+## ❓ Need more help?
 
 Refer to the full CLI documentation or run hedhog --help for a list of available commands and options.
 

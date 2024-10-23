@@ -4,13 +4,13 @@ The `hedhog info` command provides detailed information about your system and He
 
 ---
 
-#### Usage:
+#### 🚀 Usage:
 
 ```bash
 hedhog info
 ```
 
-#### Output Example
+#### 📋 Output Example
 
 ```bash
 [System Information]
@@ -25,7 +25,7 @@ HedHog CLI Version : 0.0.16
 utils version : 0.0.2
 ```
 
-#### Why it's useful?
+#### ❓ Why it's useful?
 
 - **System Diagnostics**: Quickly access system information and version details, which is helpful for debugging and support.
 - **Environment Validation**: Ensure that your development environment is correctly configured and up-to-date.
