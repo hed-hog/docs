@@ -1,4 +1,6 @@
-# hedhog reset
+# 🦔 hedhog reset
+
+> 🔄 **Essential Command**: The `hedhog reset` command is crucial for reinitializing the Hedhog project by removing extraneous dependencies and their corresponding migrations. It effectively restores your project to a clean state, which is ideal for cleaning up unnecessary files, resetting the database, and reconfiguring environment settings.
 
 The `hedhog reset` command is used to redefine and reset the Hedhog project by removing additional dependencies and their related migrations. This command is particularly useful when you want to clean up the project or revert it to a baseline configuration, removing unnecessary files and resetting the database and environment settings.
 

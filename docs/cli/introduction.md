@@ -1,6 +1,6 @@
-# Introduction to Hedhog CLI
+# 🦔 Introduction to Hedhog CLI
 
-**Enhance your development experience with the HedHog CLI. From project creation to adding external modules, manage everything with ease using simple commands.**
+> 🦔 **Get Started**: Enhance your development experience with the HedHog CLI. From project creation to adding external modules, manage everything with ease using simple commands.
 
 ---
 

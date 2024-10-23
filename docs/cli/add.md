@@ -1,4 +1,6 @@
-# hedhog add
+# 🦔 hedhog add
+
+> ⚙️ **Module Integration Command**: The `hedhog add` command is designed to seamlessly incorporate new modules into your HedHog project. Whether you want to enhance your project with pagination features, authentication modules, or other functionalities, this command allows for swift and straightforward expansion of your project's capabilities.
 
 The `hedhog add` command allows you to integrate new modules into your HedHog project with ease. Whether you need to add a pagination feature, an authentication module, or any other functionality, this command helps you expand your project’s capabilities quickly.
 

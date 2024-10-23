@@ -1,4 +1,6 @@
-# hedhog create
+# 🦔 hedhog create
+
+> 🚀 **Project Initialization Command**: The `hedhog create` command is essential for establishing a new HedHog project from the ground up. It automatically sets up the fundamental project structure, including all necessary dependencies and configurations, enabling you to dive into development right away.
 
 The `hedhog create` command is used to generate a new HedHog project from scratch. This command sets up the basic structure, including necessary dependencies and configurations, allowing you to start development immediately.
 

@@ -1,4 +1,6 @@
-# hedhog refresh
+# 🦔 hedhog refresh
+
+> 🔄 **Key Command**: The `hedhog refresh` command is vital for updating the project's configuration and dependencies. It addresses issues stemming from outdated or inconsistent settings, ensuring that your project aligns with the latest configurations and modules for optimal performance.
 
 The `hedhog refresh` command is used to refresh the project's configuration and dependencies. This command can help solve issues related to outdated or mismatched settings, ensuring that your project is up to date with the latest configurations and modules.
 

@@ -1,4 +1,6 @@
-# hedhog start
+# 🦔 hedhog start
+
+> 🦔 **Key Command**: The `hedhog start` command is essential for starting the Hedhog application, running both the backend API and the Admin interface simultaneously while monitoring their ports.
 
 The `start` command is used to start the Hedhog application. It concurrently runs the backend API and the Admin interface, making sure both services are up and running. Additionally, it monitors the ports to ensure that the services are accessible.
 
