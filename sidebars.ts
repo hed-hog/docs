@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
       label: "Folder Structure",
       id: "structure/folder-structure",
     },
+
     {
       type: "category",
       label: "CLI Commands",
@@ -55,6 +56,17 @@ const sidebars: SidebarsConfig = {
           type: "doc",
           label: "Start",
           id: "cli/start",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "Patterns",
+      items: [
+        {
+          type: "doc",
+          label: "YAML for Table Definition",
+          id: "patterns/yaml",
         },
       ],
     },
