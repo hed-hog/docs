@@ -12,7 +12,129 @@ const sidebars: SidebarsConfig = {
       label: "Folder Structure",
       id: "structure/folder-structure",
     },
-
+    {
+      type: "doc",
+      label: "Hedhog YAML",
+      id: "yaml/hedhog-yaml",
+    },
+    {
+      type: "category",
+      label: "Modules",
+      items: [
+        {
+          type: "category",
+          label: "Admin",
+          items: [
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "modules/admin/introduction",
+            },
+            {
+              type: "doc",
+              label: "Auth",
+              id: "modules/admin/auth",
+            },
+            {
+              type: "doc",
+              label: "Locale",
+              id: "modules/admin/locale",
+            },
+            {
+              type: "doc",
+              label: "Menu",
+              id: "modules/admin/menu",
+            },
+            {
+              type: "doc",
+              label: "Role",
+              id: "modules/admin/role",
+            },
+            {
+              type: "doc",
+              label: "Route",
+              id: "modules/admin/route",
+            },
+            {
+              type: "doc",
+              label: "Screen",
+              id: "modules/admin/screen",
+            },
+            {
+              type: "doc",
+              label: "Setting",
+              id: "modules/admin/setting",
+            },
+            {
+              type: "doc",
+              label: "User",
+              id: "modules/admin/user",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Person",
+          items: [
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "modules/person/introduction",
+            },
+            {
+              type: "doc",
+              label: "Address",
+              id: "modules/person/address",
+            },
+            {
+              type: "doc",
+              label: "Address Type",
+              id: "modules/person/address-type",
+            },
+            {
+              type: "doc",
+              label: "Contact",
+              id: "modules/person/contact",
+            },
+            {
+              type: "doc",
+              label: "Contact Type",
+              id: "modules/person/contact-type",
+            },
+            {
+              type: "doc",
+              label: "Country",
+              id: "modules/person/country",
+            },
+            {
+              type: "doc",
+              label: "Custom",
+              id: "modules/person/custom",
+            },
+            {
+              type: "doc",
+              label: "Custom Type",
+              id: "modules/person/custom-type",
+            },
+            {
+              type: "doc",
+              label: "Document",
+              id: "modules/person/document",
+            },
+            {
+              type: "doc",
+              label: "Document Type",
+              id: "modules/person/document-type",
+            },
+            {
+              type: "doc",
+              label: "Person Type",
+              id: "modules/person/person-type",
+            },
+          ],
+        },
+      ],
+    },
     {
       type: "category",
       label: "CLI Commands",
@@ -56,17 +178,6 @@ const sidebars: SidebarsConfig = {
           type: "doc",
           label: "Start",
           id: "cli/start",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Patterns",
-      items: [
-        {
-          type: "doc",
-          label: "YAML for Table Definition",
-          id: "patterns/yaml",
         },
       ],
     },
