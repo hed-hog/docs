@@ -73,6 +73,16 @@ const sidebars: SidebarsConfig = {
           ],
         },
         {
+          type: "doc",
+          label: "Mail",
+          id: "modules/mail/index",
+        },
+        {
+          type: "doc",
+          label: "Pagination",
+          id: "modules/pagination/index",
+        },
+        {
           type: "category",
           label: "Person",
           items: [
@@ -132,6 +142,11 @@ const sidebars: SidebarsConfig = {
               id: "modules/person/person-type",
             },
           ],
+        },
+        {
+          type: "doc",
+          label: "Prisma",
+          id: "modules/prisma/index",
         },
       ],
     },
