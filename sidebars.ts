@@ -166,6 +166,11 @@ const sidebars: SidebarsConfig = {
         },
         {
           type: "doc",
+          label: "Apply",
+          id: "cli/apply",
+        },
+        {
+          type: "doc",
           label: "Create",
           id: "cli/create",
         },
