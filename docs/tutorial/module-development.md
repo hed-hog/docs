@@ -65,7 +65,7 @@ When you run the `hedhog create <module-name>` command, it sets up a standardize
 
 #### 3. `hedhog.yaml`
 
-- **Description**: This YAML configuration file defines the settings and structures of your Hedhog module, including tables, columns, and other related configurations.
+- **Description**: This YAML configuration file defines the settings and structures of your Hedhog module, including tables, columns, and other related configurations. More details [**here**](docs/yaml/hedhog-yaml)
 - **Purpose**: It serves as a central point for managing module configurations and is used by various commands (like `apply`) to generate code and configurations automatically.
 
 #### 4. `package.json`
@@ -79,7 +79,7 @@ When you run the `hedhog create <module-name>` command, it sets up a standardize
 
   1. **`devDependencies`**:
 
-  - **Description**: These are packages that are necessary for development and testing but are not needed in a production environment. They are typically tools like testing libraries, TypeScript, linters, and other utilities used during the development process.
+  - **Description**: These are packages that are necessary for development, publishing and testing but are not needed in a production environment. They are typically tools like testing libraries, TypeScript, linters, and other utilities used during the development process.
   - **Example in `package.json`**:
     ```json
     "devDependencies": {
