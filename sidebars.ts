@@ -3,19 +3,30 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebars: SidebarsConfig = {
   tutorialSidebar: [
     {
-      type: "doc",
-      label: "Getting Started",
-      id: "tutorial/getting-started",
-    },
-    {
-      type: "doc",
-      label: "Folder Structure",
-      id: "structure/folder-structure",
-    },
-    {
-      type: "doc",
-      label: "Hedhog YAML",
-      id: "yaml/hedhog-yaml",
+      type: "category",
+      label: "Introduction",
+      items: [
+        {
+          type: "doc",
+          label: "Getting Started",
+          id: "tutorial/getting-started",
+        },
+        {
+          type: "doc",
+          label: "Module Development",
+          id: "tutorial/module-development",
+        },
+        {
+          type: "doc",
+          label: "Folder Structure",
+          id: "structure/folder-structure",
+        },
+        {
+          type: "doc",
+          label: "Hedhog YAML",
+          id: "yaml/hedhog-yaml",
+        },
+      ],
     },
     {
       type: "category",
