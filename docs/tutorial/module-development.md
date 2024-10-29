@@ -300,6 +300,24 @@ Once you have developed the module, service, controller and tested your Hedhog m
 
 By following these steps, you will successfully publish your Hedhog module to npm, allowing others to easily integrate it into their applications!
 
+### Step 7: Test your module
+
+After publishing your module, you can test it to verify if it's working properly. Go to the Hedhog cloned repo and follow the steps below:
+
+```bash
+cd backend
+hedhog add <your-module>
+```
+
+This command is going to add the created module to your Hedhog project, creating the tables in database and inserting data (you can check more details about `hedhog add` command [**here**](docs/cli/add)).
+
+Finally, you can run `npm run preinstall` on the project root, and test it!
+
+```bash
+# on the root
+npm run preinstall
+```
+
 ### Community and Support
 
 [**Github**](https://github.com/hed-hog)
