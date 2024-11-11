@@ -65,7 +65,7 @@ When you run the `hedhog create <module-name>` command, it sets up a standardize
 
 #### 3. `hedhog.yaml`
 
-- **Description**: This YAML configuration file defines the settings and structures of your Hedhog module, including tables, columns, and other related configurations. More details [**here**](docs/yaml/hedhog-yaml)
+- **Description**: This YAML configuration file defines the settings and structures of your Hedhog module, including tables, columns, and other related configurations.
 - **Purpose**: It serves as a central point for managing module configurations and is used by various commands (like `apply`) to generate code and configurations automatically.
 
 #### 4. `package.json`
@@ -152,7 +152,7 @@ When you run the `hedhog create <module-name>` command, it sets up a standardize
 
 ### Step 4: Define the Structure of Your Project in `hedhog.yaml`
 
-In Hedhog, the `hedhog.yaml` file plays a crucial role in defining the structure of your project. This configuration file specifies the database tables, their relationships, and any additional settings necessary for your module. Here's how you can define the structure of your project within `hedhog.yaml`. More information about this file can be found [**here**](/docs/yaml/hedhog-yaml).
+In Hedhog, the `hedhog.yaml` file plays a crucial role in defining the structure of your project. This configuration file specifies the database tables, their relationships, and any additional settings necessary for your module. Here's how you can define the structure of your project within `hedhog.yaml`.
 
 Example:
 
