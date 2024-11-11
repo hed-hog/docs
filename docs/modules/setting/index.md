@@ -1,4 +1,4 @@
-# Setting Module
+# 🦔 @hedhog/setting
 
 **Hedhog Setting** module provides a comprehensive solution for managing application settings. It includes functionalities to create, read, update, and delete settings, along with support for pagination and search capabilities. This module integrates with the HedHog ecosystem, utilizing @hedhog/pagination for managing paginated results and @hedhog/prisma for database interactions.
 
