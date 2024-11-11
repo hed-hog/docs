@@ -309,7 +309,7 @@ cd backend
 hedhog add <your-module>
 ```
 
-This command is going to add the created module to your Hedhog project, creating the tables in database and inserting data (you can check more details about `hedhog add` command [**here**](docs/cli/add)).
+This command is going to add the created module to your Hedhog project, creating the tables in database and inserting data.
 
 Finally, you can run `npm run preinstall` on the project root, and test it!
 
