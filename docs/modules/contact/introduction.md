@@ -1,6 +1,6 @@
-# 🦔 @hedhog/person
+# 🦔 @hedhog/contact
 
-**Hedhog Person** is a comprehensive module for managing person-related data, supporting physical, legal, and international entities. It handles associated documents, contacts, addresses, and custom attributes, designed to integrate seamlessly into Hedhog-based projects, providing a CRUD (Create, Read, Update, Delete) foundation for managing persons.
+**Hedhog Contact** is a comprehensive module for managing person-related data, supporting physical, legal, and international entities. It handles associated documents, contacts, addresses, and custom attributes, designed to integrate seamlessly into Hedhog-based projects, providing a CRUD (Create, Read, Update, Delete) foundation for managing persons.
 
 ### Features
 
@@ -15,7 +15,7 @@
 This library is an integral part of the Hedhog framework and should be installed as a dependency in your Hedhog project.
 
 ```bash
-npm i @hedhog/person
+npm i @hedhog/contact
 ```
 
 ### Included Modules:
@@ -34,33 +34,33 @@ npm i @hedhog/person
 
 ## Controller Endpoints
 
-### `POST /persons`
+### `POST /person`
 
 - **Description**: Creates a new person in the system.
 - **Parameters**:
-  - `data` (body): Data for the person, defined in `CreatePersonDTO`.
+  - `data` (body): Data for the person, defined in `CreateDTO`.
 
-### `GET /persons`
+### `GET /person`
 
 - **Description**: Retrieves all persons with pagination and locale-based translations.
 - **Parameters**:
   - `paginationParams` (query): Optional pagination parameters.
   - `locale` (header): Locale to fetch translated names of person types.
 
-### `GET /persons/:id`
+### `GET /person/:id`
 
 - **Description**: Retrieves a person by their ID.
 - **Parameters**:
   - `id` (path): Unique identifier of the person.
 
-### `PATCH /persons/:id`
+### `PATCH /person/:id`
 
 - **Description**: Updates a specific person's details.
 - **Parameters**:
   - `id` (path): Unique identifier of the person.
-  - `data` (body): Data for updating, defined in `UpdatePersonDTO`.
+  - `data` (body): Data for updating, defined in `UpdateDTO`.
 
-### `DELETE /persons`
+### `DELETE /person`
 
 - **Description**: Deletes multiple persons by their IDs.
 - **Parameters**:
@@ -68,33 +68,33 @@ npm i @hedhog/person
 
 ## Service Methods
 
-### `create(data: CreatePersonDTO)`
+### `create(data: CreateDTO)`
 
 - **Description**: Creates a new person in the database.
 - **Parameters**:
-  - `data`: Object containing person information as defined in `CreatePersonDTO`.
+  - `data`: Object containing person information as defined in `CreateDTO`.
 
-### `getPersons(locale: string, paginationParams: PaginationDTO)`
+### `list(paginationParams: PaginationDTO)`
 
-- **Description**: Retrieves all persons with pagination and locale-based translations.
+- **Description**: Retrieves all persons with pagination.
 - **Parameters**:
   - `locale`: Locale to fetch translated names of person-related data.
   - `paginationParams`: Pagination parameters.
 
-### `getPersonById(id: number)`
+### `get(id: number)`
 
 - **Description**: Retrieves a person by their unique ID.
 - **Parameters**:
   - `id`: Unique identifier of the person.
 
-### `update(id: number, data: UpdatePersonDTO)`
+### `update(id: number, data: UpdateDTO)`
 
 - **Description**: Updates a person's details in the database.
 - **Parameters**:
   - `id`: Unique identifier of the person to be updated.
-  - `data`: Data for updating, as defined in `UpdatePersonDTO`.
+  - `data`: Data for updating, as defined in `UpdateDTO`.
 
-### `remove(data: DeleteDTO)`
+### `delete(data: DeleteDTO)`
 
 - **Description**: Deletes multiple persons from the database by their IDs.
 - **Parameters**:

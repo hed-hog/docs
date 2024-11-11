@@ -4,34 +4,34 @@
 
 ### Controller Endpoints
 
-#### `POST /address-types`
+#### `POST /address-type`
 
 - **Description**: Creates a new address type.
 - **Body**:
-  - `CreateAddressTypeDTO`: The data required to create an address type, including fields like name and additional optional properties.
+  - `CreateDTO`: The data required to create an address type, including fields like name and additional optional properties.
 
-#### `GET /address-types`
+#### `GET /address-type`
 
 - **Description**: Retrieves all address types, supporting pagination and localization.
 - **Parameters**:
   - `paginationParams (query param, optional)`: Controls pagination parameters (page, limit).
   - `locale (query param, optional)`: The locale code to filter address type translations.
 
-#### `GET /address-types/:id`
+#### `GET /address-type/:id`
 
 - **Description**: Retrieves a specific address type by its ID.
 - **Parameters**:
   - `id (URL param)`: The unique ID of the address type.
 
-#### `PATCH /address-types/:id`
+#### `PATCH /address-type/:id`
 
 - **Description**: Updates an existing address type.
 - **Parameters**:
   - `id (URL param)`: The unique ID of the address type to update.
 - **Body**:
-  - `UpdateAddressTypeDTO`: Data for updating the address type’s properties.
+  - `UpdateDTO`: Data for updating the address type’s properties.
 
-#### `DELETE /address-types`
+#### `DELETE /address-type`
 
 - **Description**: Deletes one or more address types.
 - **Body**:
@@ -39,33 +39,33 @@
 
 ### Service Methods
 
-#### `create(data: CreateAddressTypeDTO)`
+#### `create(data: CreateDTO)`
 
 - **Description**: Creates a new address type entry in the database.
 - **Parameters**:
-  - `data`: The data required to create an address type, following the CreateAddressTypeDTO structure.
+  - `data`: The data required to create an address type, following the CreateDTO structure.
 
-#### `getAddressTypes(locale: string, paginationParams: PaginationDTO)`
+#### `list(locale: string, paginationParams: PaginationDTO)`
 
 - **Description**: Retrieves paginated address types, including translations based on the specified locale.
 - **Parameters**:
   - `locale`: The locale code to filter the translations for address type names.
   - `paginationParams`: Pagination parameters like page and limit.
 
-#### `getAddressTypeById(id: number)`
+#### `get(id: number)`
 
 - **Description**: Retrieves a specific address type by its ID.
 - **Parameters**:
   - `id`: The unique identifier of the address type to retrieve.
 
-#### `update(id: number, data: UpdateAddressTypeDTO)`
+#### `update(id: number, data: UpdateDTO)`
 
 - **Description**: Updates an address type’s fields by its ID.
 - **Parameters**:
   - `id`: The unique identifier of the address type to update.
   - `data`: Updated fields for the address type.
 
-#### `remove(data: DeleteDTO)`
+#### `delete(data: DeleteDTO)`
 
 - **Description**: Deletes one or more address types by their IDs.
 - **Parameters**:
@@ -75,8 +75,8 @@
 
 ```plaintext
 |── dto/                              # Data Transfer Objects
-│   ├── create-address-type.dto.ts    # DTO for creating address types
-│   └── update-address-type.dto.ts    # DTO for updating address types
+│   ├── create.dto.ts                 # DTO for creating address types
+│   └── update.dto.ts                 # DTO for updating address types
 |── address-type.controller.ts        # Controller for address-type
 |── address-type.module.ts            # Module definition for address-type
 |── address-type.service.ts           # Service class for address-type logic

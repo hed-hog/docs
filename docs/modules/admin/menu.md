@@ -12,23 +12,34 @@
 
 The `MenuController` exposes the following endpoints:
 
-- **GET /menus**: Retrieve a list of menus with pagination.
-- **GET /menus/:menuId**: Retrieve a specific menu by ID.
-- **POST /menus**: Create a new menu item.
-- **PATCH /menus/:menuId**: Update an existing menu item by ID.
-- **DELETE /menus**: Delete menu items based on provided IDs.
-- **PATCH /menus/order**: Update the order of menu items.
+- **GET /menu**: Retrieve a list of menus with pagination.
+- **GET /menu/:menuId**: Retrieve a specific menu by ID.
+- **POST /menu**: Create a new menu item.
+- **PATCH /menu/:menuId**: Update an existing menu item by ID.
+- **DELETE /menu**: Delete menu items based on provided IDs.
+- **PATCH /menu/order**: Update the order of menu items.
+- **GET /menu/:menuId/role**: Retrieve roles associated with a specific menu by ID.
+- **PATCH /menu/:menuId/role**: Update roles associated with a specific menu by ID.
+- **GET /menu/:menuId/screen**: Retrieve screens associated with a specific menu by ID.
+- **PATCH /menu/:menuId/screen**: Update screens associated with a specific menu by ID.
+- **GET /menu/system**: Retrieve system menus.
 
 ### MenuService
 
 The `MenuService` class contains the business logic for handling menu operations, including querying the database and processing data.
 
-- **getMenu(paginationParams: PaginationDTO)**: Retrieves a paginated list of menu items.
+- **list(locale: string, paginationParams: PaginationDTO)**: Retrieves a paginated list of menu items.
 - **get(menuId: number)**: Retrieves a menu item by ID.
 - **create(data: CreateDTO)**: Creates a new menu item.
 - **update(id: number; data: UpdateDTO)**: Updates an existing menu item by ID.
 - **delete(data: DeleteDTO)**: Deletes menu items based on provided IDs.
 - **updateOrder(data: OrderDTO)**: Updates the order of menu items.
+- **updateScreens(menuId: number, data: UpdateIdsDTO)**: Updates the screens associated with a specific menu by ID.
+- **updateRoles(menuId: number, data: UpdateIdsDTO)**: Updates the roles associated with a specific menu by ID.
+- **listScreens(locale: string, menuId: number, paginationParams: PaginationDTO)**: Retrieves a paginated list of screens associated with a specific menu by ID.
+- **listRoles(locale: string, menuId: number, paginationParams: PaginationDTO)**: Retrieves a paginated list of roles associated with a specific menu by ID.
+- **getMenus(locale: string, userId: number, menuId = 0)**: Retrieves a hierarchical list of menus accessible by a specific user.
+- **getSystemMenu(locale: string, userId: number)**: Retrieves the system menus accessible by a specific user.
 
 ### Folder Structure
 

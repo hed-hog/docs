@@ -48,11 +48,6 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
-              label: "Locale",
-              id: "modules/admin/locale",
-            },
-            {
-              type: "doc",
               label: "Menu",
               id: "modules/admin/menu",
             },
@@ -73,15 +68,76 @@ const sidebars: SidebarsConfig = {
             },
             {
               type: "doc",
-              label: "Setting",
-              id: "modules/admin/setting",
-            },
-            {
-              type: "doc",
               label: "User",
               id: "modules/admin/user",
             },
           ],
+        },
+        {
+          type: "category",
+          label: "Contact",
+          items: [
+            {
+              type: "doc",
+              label: "Introduction",
+              id: "modules/contact/introduction",
+            },
+            {
+              type: "doc",
+              label: "Address",
+              id: "modules/contact/address",
+            },
+            {
+              type: "doc",
+              label: "Address Type",
+              id: "modules/contact/address-type",
+            },
+            {
+              type: "doc",
+              label: "Contact",
+              id: "modules/contact/contact",
+            },
+            {
+              type: "doc",
+              label: "Contact Type",
+              id: "modules/contact/contact-type",
+            },
+            {
+              type: "doc",
+              label: "Country",
+              id: "modules/contact/country",
+            },
+            {
+              type: "doc",
+              label: "Custom",
+              id: "modules/contact/custom",
+            },
+            {
+              type: "doc",
+              label: "Custom Type",
+              id: "modules/contact/custom-type",
+            },
+            {
+              type: "doc",
+              label: "Document",
+              id: "modules/contact/document",
+            },
+            {
+              type: "doc",
+              label: "Document Type",
+              id: "modules/contact/document-type",
+            },
+            {
+              type: "doc",
+              label: "Person Type",
+              id: "modules/contact/person-type",
+            },
+          ],
+        },
+        {
+          type: "doc",
+          label: "Locale",
+          id: "modules/locale/index",
         },
         {
           type: "doc",
@@ -94,70 +150,14 @@ const sidebars: SidebarsConfig = {
           id: "modules/pagination/index",
         },
         {
-          type: "category",
-          label: "Person",
-          items: [
-            {
-              type: "doc",
-              label: "Introduction",
-              id: "modules/person/introduction",
-            },
-            {
-              type: "doc",
-              label: "Address",
-              id: "modules/person/address",
-            },
-            {
-              type: "doc",
-              label: "Address Type",
-              id: "modules/person/address-type",
-            },
-            {
-              type: "doc",
-              label: "Contact",
-              id: "modules/person/contact",
-            },
-            {
-              type: "doc",
-              label: "Contact Type",
-              id: "modules/person/contact-type",
-            },
-            {
-              type: "doc",
-              label: "Country",
-              id: "modules/person/country",
-            },
-            {
-              type: "doc",
-              label: "Custom",
-              id: "modules/person/custom",
-            },
-            {
-              type: "doc",
-              label: "Custom Type",
-              id: "modules/person/custom-type",
-            },
-            {
-              type: "doc",
-              label: "Document",
-              id: "modules/person/document",
-            },
-            {
-              type: "doc",
-              label: "Document Type",
-              id: "modules/person/document-type",
-            },
-            {
-              type: "doc",
-              label: "Person Type",
-              id: "modules/person/person-type",
-            },
-          ],
-        },
-        {
           type: "doc",
           label: "Prisma",
           id: "modules/prisma/index",
+        },
+        {
+          type: "doc",
+          label: "Setting",
+          id: "modules/setting/index",
         },
       ],
     },

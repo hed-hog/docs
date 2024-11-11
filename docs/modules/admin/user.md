@@ -10,20 +10,20 @@ The **Hedhog User** module in HedHog provides functionality to manage user data 
 
 ### Controller Endpoints
 
-#### `GET /users`
+#### `GET /user`
 
 - **Description**: Retrieve a paginated list of users.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Pagination**: Supports pagination through query parameters.
 
-#### `GET /users/:userId`
+#### `GET /user/:userId`
 
 - **Description**: Retrieve a specific user by its ID.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - **userId** (number): The ID of the user to retrieve.
 
-#### `POST /users`
+#### `POST /user`
 
 - **Description**: Create a new user.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -32,7 +32,7 @@ The **Hedhog User** module in HedHog provides functionality to manage user data 
   - **name** (string): Name of the user.
   - **password** (string): Password of the user.
 
-#### `PATCH /users/:userId`
+#### `PATCH /user/:userId`
 
 - **Description**: Update an existing user.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -43,12 +43,29 @@ The **Hedhog User** module in HedHog provides functionality to manage user data 
   - **name** (string, optional): Updated name of the user.
   - **password** (string, optional): Updated password of the user.
 
-#### `DELETE /users`
+#### `DELETE /user`
 
 - **Description**: Delete one or more users.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Body**:
   - **ids** (number[]): Array of user IDs to delete.
+
+#### `GET /user/:userId/role`
+
+- **Description**: Retrieve a list of roles for a specific user.
+- **Authentication**: Required (uses `AuthGuard`).
+- **Parameters**:
+  - **userId** (number): The ID of the user whose roles are to be retrieved.
+- **Pagination**: Supports pagination through query parameters.
+
+#### `PATCH /user/:userId/role`
+
+- **Description**: Update roles for a specific user.
+- **Authentication**: Required (uses `AuthGuard`).
+- **Parameters**:
+  - **userId** (number): The ID of the user whose roles are to be updated.
+- **Body**:
+  - **data** (UpdateIdsDTO): Data containing the updated role IDs.
 
 ### Service Methods
 

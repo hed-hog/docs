@@ -11,28 +11,28 @@
 
 ### Controller Endpoints
 
-#### `GET /roles`
+#### `GET /role`
 
 - **Description**: Retrieve a paginated list of all roles.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `paginationParams` (optional): Standard pagination parameters.
 
-#### `GET /roles/:roleId`
+#### `GET /role/:roleId`
 
 - **Description**: Retrieve details of a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `roleId (number)`: The ID of the role to retrieve.
 
-#### `POST /roles`
+#### `POST /role`
 
 - **Description**: Create a new role.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `data` (CreateDTO): The data for the new role (name, description, etc).
 
-#### `PATCH /roles/:roleId`
+#### `PATCH /role/:roleId`
 
 - **Description**: Update an existing role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -40,14 +40,14 @@
   - `roleId (number)`: The ID of the role to update.
   - `data` (UpdateDTO): The data to update for the role.
 
-#### `DELETE /roles`
+#### `DELETE /role`
 
 - **Description**: Delete one or more roles.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `data` (DeleteDTO): List of role IDs to delete.
 
-#### `GET /roles/:roleId/users`
+#### `GET /role/:roleId/user`
 
 - **Description**: Get a list of users associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -55,7 +55,7 @@
   - `roleId (number)`: The ID of the role to retrieve users for.
   - `paginationParams` (optional): Standard pagination parameters.
 
-#### `GET /roles/:roleId/menus`
+#### `GET /role/:roleId/menu`
 
 - **Description**: Get a list of menus associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -63,7 +63,7 @@
   - `roleId (number)`: The ID of the role to retrieve menus for.
   - `paginationParams` (optional): Standard pagination parameters.
 
-#### `GET /roles/:roleId/routes`
+#### `GET /role/:roleId/route`
 
 - **Description**: Get a list of routes associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -71,7 +71,7 @@
   - `roleId (number)`: The ID of the role to retrieve routes for.
   - `paginationParams` (optional): Standard pagination parameters.
 
-#### `GET /roles/:roleId/screens`
+#### `GET /role/:roleId/screen`
 
 - **Description**: Get a list of screens associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -79,14 +79,14 @@
   - `roleId (number)`: The ID of the role to retrieve screens for.
   - `paginationParams` (optional): Standard pagination parameters.
 
-#### `PATCH /roles/:roleId/users`
+#### `PATCH /role/:roleId/user`
 
 - **Description**: Update the users associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `roleId (number)`: The ID of the role. -`data` (UpdateIdsDTO): List of user IDs to associate with the role.
 
-#### `PATCH /roles/:roleId/menus`
+#### `PATCH /role/:roleId/menu`
 
 - **Description**: Update the menus associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -94,7 +94,7 @@
   - `roleId (number)`: The ID of the role.
   - `data` (UpdateIdsDTO): List of menu IDs to associate with the role.
 
-#### `PATCH /roles/:roleId/routes`
+#### `PATCH /role/:roleId/route`
 
 - **Description**: Update the routes associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -102,7 +102,7 @@
   - `roleId (number)`: The ID of the role.
   - `data` (UpdateIdsDTO): List of route IDs to associate with the role.
 
-#### `PATCH /roles/:roleId/screens`
+#### `PATCH /role/:roleId/screen`
 
 - **Description**: Update the screens associated with a specific role.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -168,13 +168,13 @@
   - `roleId (number)`: The ID of the role to retrieve associated screens.
   - `paginationParams`: Includes pagination criteria.
 
-#### `getRoles(paginationParams: PaginationDTO)`
+#### `list(locale: string, paginationParams: PaginationDTO)`
 
 - **Description**: Retrieves a paginated list of all roles, with optional search functionality based on name and description.
 - **Parameters**:
   - `paginationParams`: Includes pagination and search criteria.
 
-#### `get(roleId: number)`
+#### `get(locale: string, roleId: number)`
 
 - **Description**: Retrieves a specific role by its ID.
 - **Parameters**:
@@ -182,11 +182,9 @@
 
 #### `create(data: CreateDTO)`
 
-- **Description**: Creates a new role with the specified name and description.
+- **Description**: Creates a new role.
 - **Parameters**:
-  - `data`: An object containing the following properties:
-  - `name (string)`: The name of the new role.
-  - `description (string)`: A description of the new role.
+  - `data`: An object containing the properties for role creation.
 
 #### `update({ id, data }: { id: number; data: UpdateDTO })`
 

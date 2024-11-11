@@ -4,33 +4,33 @@ The **Person Type** module manages person type classifications used for categori
 
 ### Controller Endpoints
 
-#### `POST /person-types`
+#### `POST /person-type`
 
 - **Description**: Creates a new person type.
 - **Parameters**:
   - `data` (body): Data for the person type, defined in `CreatePersonTypeDTO`.
 
-#### `GET /person-types`
+#### `GET /person-type`
 
 - **Description**: Retrieves all person types with pagination and locale-based translations.
 - **Parameters**:
   - `paginationParams` (query): Optional pagination parameters.
   - `locale` (header): Locale to fetch translated names of person types.
 
-#### `GET /person-types/:id`
+#### `GET /person-type/:id`
 
 - **Description**: Retrieves a person type by its ID.
 - **Parameters**:
   - `id` (path): ID of the person type.
 
-#### `PATCH /person-types/:id`
+#### `PATCH /person-type/:id`
 
 - **Description**: Updates a specific person type.
 - **Parameters**:
   - `id` (path): ID of the person type.
   - `data` (body): Data for updating, defined in `UpdatePersonTypeDTO`.
 
-#### `DELETE /person-types`
+#### `DELETE /person-type`
 
 - **Description**: Deletes multiple person types by IDs.
 - **Parameters**:
@@ -38,33 +38,33 @@ The **Person Type** module manages person type classifications used for categori
 
 ### Service Methods
 
-#### `create(data: CreatePersonTypeDTO)`
+#### `create(data: CreateDTO)`
 
 - **Description**: Creates a new person type.
 - **Parameters**:
-  - `data`: Object containing person type information as defined in `CreatePersonTypeDTO`.
+  - `data`: Object containing person type information as defined in `CreateDTO`.
 
-#### `getPersonTypes(locale: string, paginationParams: PaginationDTO)`
+#### `list(locale: string, paginationParams: PaginationDTO)`
 
 - **Description**: Retrieves all person types with pagination and locale-based translations.
 - **Parameters**:
   - `locale`: Locale to fetch translated names of person types.
   - `paginationParams`: Pagination parameters.
 
-#### `getPersonTypeById(id: number)`
+#### `get(id: number)`
 
 - **Description**: Retrieves a person type by its ID.
 - **Parameters**:
   - `id`: ID of the person type.
 
-#### `update(id: number, data: UpdatePersonTypeDTO)`
+#### `update(id: number, data: UpdateDTO)`
 
 - **Description**: Updates a person type.
 - **Parameters**:
   - `id`: ID of the person type to update.
-  - `data`: Data for updating, as defined in `UpdatePersonTypeDTO`.
+  - `data`: Data for updating, as defined in `UpdateDTO`.
 
-#### `remove(data: DeleteDTO)`
+#### `delete(data: DeleteDTO)`
 
 - **Description**: Deletes multiple person types.
 - **Parameters**:
@@ -74,8 +74,8 @@ The **Person Type** module manages person type classifications used for categori
 
 ```plaintext
 ├── dto
-│   ├── create-person-type.dto.ts     # DTO for creating a person type
-│   ├── update-person-type.dto.ts     # DTO for updating a person type
+│   ├── create.dto.ts                 # DTO for creating a person type
+│   ├── update.dto.ts                 # DTO for updating a person type
 |── person-type.controller.ts         # Controller for person type routes
 |── person-type.module.ts             # Module definition for person types
 |── person-type.service.ts            # Service class for person type operations

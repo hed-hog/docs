@@ -10,28 +10,28 @@
 
 ### Controller Endpoints
 
-#### `GET /routes`
+#### `GET /route`
 
 - **Description**: Retrieves a paginated list of all routes.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `paginationParams`: Includes pagination criteria.
 
-#### `GET /routes/:routeId`
+#### `GET /route/:routeId`
 
 - **Description**: Retrieves a specific route by its ID.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `routeId (number)`: The ID of the route to retrieve.
 
-#### `POST /routes`
+#### `POST /route`
 
 - **Description**: Creates a new route with the specified URL and method.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `data`: An object containing the url and method for the new route.
 
-#### `PATCH /routes/:routeId`
+#### `PATCH /route/:routeId`
 
 - **Description**: Updates an existing route identified by its ID.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -39,14 +39,14 @@
   - `routeId (number)`: The ID of the route to update.
   - `data`: An object containing the updated information for the route.
 
-#### `DELETE /routes`
+#### `DELETE /route`
 
 - **Description**: Deletes one or more routes.
 - **Authentication**: Required (uses `AuthGuard`).
 - **Parameters**:
   - `data`: An object containing an array of route IDs to delete.
 
-#### `GET /routes/:routeId/roles`
+#### `GET /route/:routeId/role`
 
 - **Description**: Retrieves a paginated list of roles associated with a specific route.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -54,7 +54,7 @@
   - `routeId (number)`: The ID of the route to retrieve associated roles.
   - `paginationParams`: Includes pagination criteria.
 
-#### `PATCH /routes/:routeId/roles`
+#### `PATCH /route/:routeId/role`
 
 - **Description**: Updates the roles associated with a specific route.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -62,7 +62,7 @@
   - `routeId (number)`: The ID of the route.
   - `data`: An object containing an array of role IDs to associate with the route.
 
-#### `GET /routes/:routeId/screens`
+#### `GET /route/:routeId/screen`
 
 - **Description**: Retrieves a paginated list of screens associated with a specific route.
 - **Authentication**: Required (uses `AuthGuard`).
@@ -70,7 +70,7 @@
   - `routeId (number)`: The ID of the route to retrieve associated screens.
   - `paginationParams`: Includes pagination criteria.
 
-#### `PATCH /routes/:routeId/screens`
+#### `PATCH /route/:routeId/screen`
 
 - **Description:** Updates the screens associated with a specific route.
 - **Authentication**: Required (uses AuthGuard).
@@ -80,13 +80,13 @@
 
 ### Service Methods
 
-#### `getRoutes(paginationParams: PaginationDTO)`
+#### `list(paginationParams: PaginationDTO)`
 
 - **Description**: Retrieves a paginated list of routes with optional search functionality based on URL and method.
 - **Parameters**:
   - `paginationParams`: Includes pagination and search criteria.
 
-#### `getRouteById(routeId: number)`
+#### `get(routeId: number)`
 
 - **Description**: Retrieves a specific route by its ID.
 - **Parameters**:

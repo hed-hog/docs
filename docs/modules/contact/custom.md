@@ -4,14 +4,14 @@ The **Custom** module is used to manage custom data associated with persons. Thi
 
 ### Controller Endpoints
 
-#### `POST /persons/:personId/customs`
+#### `POST /person/:personId/custom`
 
 - **Description**: Creates a custom record for a specific person.
 - **Parameters**:
   - `personId` (path): ID of the person.
-  - `data` (body): Object containing custom data (`name`, `value`, etc.) as defined in `CreatePersonCustomDTO`.
+  - `data` (body): Object containing custom data (`name`, `value`, etc.) as defined in `CreateDTO`.
 
-#### `GET /persons/:personId/customs`
+#### `GET /person/:personId/custom`
 
 - **Description**: Retrieves a list of all custom records for a specific person.
 - **Parameters**:
@@ -19,15 +19,15 @@ The **Custom** module is used to manage custom data associated with persons. Thi
   - `typeId` (query, optional): Filters custom records by type.
   - `id` (query, optional): Retrieves a specific custom record by ID if provided.
 
-#### `PATCH /persons/:personId/customs/:customId`
+#### `PATCH /person/:personId/custom/:customId`
 
 - **Description**: Updates a specific custom record.
 - **Parameters**:
   - `personId` (path): ID of the person.
   - `customId` (path): ID of the custom record.
-  - `data` (body): Object containing updated custom data fields as defined in `UpdatePersonCustomDTO`.
+  - `data` (body): Object containing updated custom data fields as defined in `UpdateDTO`.
 
-#### `DELETE /persons/:personId/customs/:customId`
+#### `DELETE /person/:personId/custom/:customId`
 
 - **Description**: Deletes a specific custom record.
 - **Parameters**:
@@ -36,51 +36,42 @@ The **Custom** module is used to manage custom data associated with persons. Thi
 
 ### Service Methods
 
-#### `create(personId: number, data: CreatePersonCustomDTO)`
+#### `create(personId: number, data: CreateDTO)`
 
 - **Description**: Creates a custom record associated with a specific person.
 - **Parameters**:
   - `personId`: ID of the person.
   - `data`: Object containing custom data (`name`, `value`, etc.).
 
-#### `getCustoms(personId: number)`
+#### `list(personId?: number, typeId?: number, customId?: number)`
 
 - **Description**: Retrieves all custom records for a specific person with pagination.
 - **Parameters**:
   - `personId`: ID of the person.
+  - `typeId`: TypeID of the custom attribute.
+  - `customId`: ID of the custom attribute.
 
-#### `getCustomByTypeId(personId: number, typeId: number)`
-
-- **Description**: Retrieves a custom record for a person filtered by a specific type ID.
-- **Parameters**:
-  - `personId`: ID of the person.
-  - `typeId`: ID of the custom type.
-
-#### `getCustomById(customId: number)`
-
-- **Description**: Retrieves a specific custom record by its ID.
-- **Parameters**:
-  - `customId`: ID of the custom record.
-
-#### `update(customId: number, data: UpdatePersonCustomDTO)`
+#### `update(personId: number, customId: number, data: UpdateDTO)`
 
 - **Description**: Updates a specific custom record with new data.
 - **Parameters**:
+  - `personId`: ID of the person.
   - `customId`: ID of the custom record.
   - `data`: Object containing updated custom data fields.
 
-#### `remove(customId: number)`
+#### `delete(personId: number, data: DeleteDTO)`
 
 - **Description**: Deletes a specific custom record.
 - **Parameters**:
-  - `customId`: ID of the custom record.
+  - `personId`: ID of the person.
+  - `data`: Object containing an array of ids for the address types to delete.
 
 ### Folder Structure
 
 ```plaintext
 |── dto/                         # Data Transfer Objects
-│   ├── create-custom.dto.ts     # DTO for creating customs
-│   └── update-custom.dto.ts     # DTO for updating customs
+│   ├── create.dto.ts            # DTO for creating customs
+│   └── update.dto.ts            # DTO for updating customs
 |── custom.controller.ts         # Controller for custom
 |── custom.module.ts             # Module definition for custom
 |── custom.service.ts            # Service class for custom logic

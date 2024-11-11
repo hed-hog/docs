@@ -4,15 +4,15 @@ The **Contact** module manages contacts associated with individual profiles, ena
 
 ### Controller Endpoints
 
-#### `POST /persons/:personId/contacts`
+#### `POST /person/:personId/contact`
 
 - **Description**: Creates a new contact for a person.
 - **Parameters**:
   - `personId (URL param)`: The ID of the person associated with the contact.
 - **Body:**
-  - `CreatePersonContactDTO`: Data required to create the contact, including fields like type_id, value, primary, etc.
+  - `CreateDTO`: Data required to create the contact, including fields like type_id, value, primary, etc.
 
-#### `GET /persons/:personId/contacts`
+#### `GET /person/:personId/contact`
 
 - **Description**: Retrieves contacts associated with a specific person, with optional filtering by contact type or contact ID.
 - **Parameters**:
@@ -20,16 +20,16 @@ The **Contact** module manages contacts associated with individual profiles, ena
   - `typeId (query param, optional)`: Filters results by a specific contact type.
   - `contactId (query param, optional)`: Retrieves a specific contact by ID.
 
-#### `PATCH /persons/:personId/contacts/:contactId`
+#### `PATCH /person/:personId/contact/:contactId`
 
 - **Description**: Updates an existing contact for a person.
 - **Parameters**:
   - `personId (URL param)`: The ID of the person.
   - `contactId (URL param)`: The ID of the contact to update.
 - **Body**:
-  - `UpdatePersonContactDTO`: Data for updating contact fields.
+  - `UpdateDTO`: Data for updating contact fields.
 
-#### `DELETE /persons/:personId/contacts/:contactId`
+#### `DELETE /person/:personId/contact/:contactId`
 
 - **Description**: Deletes a contact associated with a person.
 - **Parameters**:
@@ -38,51 +38,42 @@ The **Contact** module manages contacts associated with individual profiles, ena
 
 ### Service Methods
 
-#### `create(personId: number, data: CreatePersonContactDTO)`
+#### `create(personId: number, data: CreateDTO)`
 
 - **Description**: Creates a new contact entry in the database linked to a specific personId.
 - **Parameters**:
   - `personId`: The ID of the associated person.
   - `data`: Contact data, including type_id, value, primary, and other details.
 
-#### `getContacts(personId: number)`
+#### `list(personId?: number, typeId?: number, contactId?: number)`
 
 - **Description**: Retrieves paginated contact data associated with a specific person.
 - **Parameters**:
   - `personId`: The ID of the associated person.
+  - `typeId`: TypeID of the contact.
+  - `contactId`: ID of the contact.
 
-#### `getContactByTypeId(personId: number, typeId: number)`
-
-- **Description**: Retrieves a contact by its type for a specific person.
-- **Parameters**:
-  - `personId`: The ID of the associated person.
-  - `typeId`: The ID of the contact type.
-
-#### `getContactById(contactId: number)`
-
-- **Description**: Retrieves a specific contact by ID.
-- **Parameters**:
-  - `contactId`: The unique ID of the contact.
-
-#### `update(contactId: number, data: UpdatePersonContactDTO)`
+#### `update(personId: number, contactId: number, data: UpdateDTO)`
 
 - **Description**: Updates a contact’s fields by its ID.
 - **Parameters**:
+  - `personId`: The ID of the associated person.
   - `contactId`: The unique ID of the contact to update.
   - `data`: Updated contact data.
 
-#### `remove(contactId: number)`
+#### `delete(personId: number, data: DeleteDTO)`
 
 - **Description**: Deletes a contact by its ID.
 - **Parameters**:
-  - `contactId`: The unique ID of the contact to delete.
+  - `personId`: The ID of the associated person.
+  - `data`: Object containing an array of ids for the address types to delete.
 
 ### Folder Structure
 
 ```plaintext
 |── dto/                         # Data Transfer Objects
-│   ├── create-contact.dto.ts    # DTO for creating contacts
-│   └── update-contact.dto.ts    # DTO for updating contacts
+│   ├── create.dto.ts            # DTO for creating contacts
+│   └── update.dto.ts            # DTO for updating contacts
 |── contact.controller.ts        # Controller for contact
 |── contact.module.ts            # Module definition for contact
 |── contact.service.ts           # Service class for contact logic

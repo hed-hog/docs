@@ -4,32 +4,32 @@ The **Custom Type** module is responsible for managing types for custom data ass
 
 ### Controller Endpoints
 
-#### `POST /custom-types`
+#### `POST /custom-type`
 
 - **Description**: Creates a new custom type.
 - **Parameters**:
-  - `data` (body): Object containing custom type data as defined in `CreateCustomTypeDTO`.
+  - `data` (body): Object containing custom type data as defined in `CreateDTO`.
 
-#### `GET /custom-types`
+#### `GET /custom-type`
 
 - **Description**: Retrieves a paginated list of custom types.
 - **Parameters**:
   - `paginationParams` (query): Optional pagination parameters.
 
-#### `GET /custom-types/:id`
+#### `GET /custom-type/:id`
 
 - **Description**: Retrieves a specific custom type by its ID.
 - **Parameters**:
   - `id` (path): ID of the custom type.
 
-#### `PATCH /custom-types/:id`
+#### `PATCH /custom-type/:id`
 
 - **Description**: Updates a specific custom type.
 - **Parameters**:
   - `id` (path): ID of the custom type.
-  - `data` (body): Object containing updated custom type fields as defined in `UpdateCustomTypeDTO`.
+  - `data` (body): Object containing updated custom type fields as defined in `UpdateDTO`.
 
-#### `DELETE /custom-types`
+#### `DELETE /custom-type`
 
 - **Description**: Deletes multiple custom types based on provided IDs.
 - **Parameters**:
@@ -37,32 +37,32 @@ The **Custom Type** module is responsible for managing types for custom data ass
 
 ### Service Methods
 
-#### `create(data: CreateCustomTypeDTO)`
+#### `create(data: CreateDTO)`
 
 - **Description**: Creates a new custom type in the database.
 - **Parameters**:
   - `data`: Object with fields required to define a custom type.
 
-#### `getcustomTypes(paginationParams: PaginationDTO)`
+#### `list(locale: string, paginationParams: PaginationDTO)`
 
 - **Description**: Retrieves a paginated list of custom types with optional search filters.
 - **Parameters**:
   - `paginationParams`: Optional pagination and filtering parameters.
 
-#### `getcustomTypeById(id: number)`
+#### `get(id: number)`
 
 - **Description**: Retrieves a specific custom type by ID.
 - **Parameters**:
   - `id`: ID of the custom type.
 
-#### `update(id: number, data: UpdateCustomTypeDTO)`
+#### `update(id: number, data: UpdateDTO)`
 
 - **Description**: Updates a custom type with new data.
 - **Parameters**:
   - `id`: ID of the custom type.
   - `data`: Object containing updated custom type fields.
 
-#### `remove(data: DeleteDTO)`
+#### `delete(data: DeleteDTO)`
 
 - **Description**: Deletes custom types with specified IDs.
 - **Parameters**:
@@ -72,8 +72,8 @@ The **Custom Type** module is responsible for managing types for custom data ass
 
 ```plaintext
 |── dto/                          # Data Transfer Objects
-│   ├── create-custom-type.dto.ts # DTO for creating custom-types
-│   └── update-custom-type.dto.ts # DTO for updating custom-types
+│   ├── create.dto.ts             # DTO for creating custom-types
+│   └── update.dto.ts             # DTO for updating custom-types
 |── custom-type.controller.ts     # Controller for custom types
 |── custom-type.module.ts         # Module definition for custom types
 |── custom-type.service.ts        # Service class for custom type logic
