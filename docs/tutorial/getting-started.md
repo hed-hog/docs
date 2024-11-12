@@ -48,39 +48,4 @@ Or use it with npx without global installation:
 npx @hedhog/cli [command]
 ```
 
-### Creating a New Project
-
-Create a new project named blog:
-
-```bash
-hedhog new blog
-```
-
-The CLI will guide you through the setup, including database connection. If you prefer, the CLI can automatically set up a database using Docker.
-
-### Starting the Application
-
-Navigate to the project directory and start the server:
-
-```bash
-cd blog
-npm run dev
-```
-
-Access the administrative panel at http://localhost:3100 and the API at http://localhost:3000.
-
-### Documentation
-
-Refer to the full documentation to learn more about how to use HedHog and take advantage of all its features.
-
-### Community and Support
-
-[**Github**](https://github.com/hed-hog)
-
-Contribute. Feel free to open issues or pull requests.
-
-### License
-
-HedHog is licensed under the [**MIT License**](https://opensource.org/license/mit).
-
-Start building powerful applications with HedHog today!
+Now, go to [**Module Development**](/docs/tutorial/module-development) topic to learn more about Hedhog modules and how to create yours!

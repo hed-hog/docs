@@ -31,13 +31,13 @@ This adds the pagination module to your project.
 
 ---
 
-### Available Hedhog Modules
-
 | Name           | Description                                                                                                                       |
 | -------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | **admin**      | Provides admin functionalities, including auth, menu, role, routes, screens, settings and user management.                        |
+| **contact**    | Manages person-related data, including CRUD operations and associations with addresses, contacts, documents and other attributes. |
 | **file**       | Provides file management capabilities, such as file uploads and storage.                                                          |
+| **locale**     | Manages localization settings, including language preferences and translations.                                                   |
 | **mail**       | Handles sending emails, including templating and SMTP configuration.                                                              |
 | **pagination** | Provides pagination support for lists and data views.                                                                             |
-| **person**     | Manages person-related data, including CRUD operations and associations with addresses, contacts, documents and other attributes. |
 | **prisma**     | Integrates [**Prisma**](https://www.prisma.io/) ORM for database management and migrations.                                       |
+| **setting**    | Provides configuration management for application settings and preferences.                                                       |
