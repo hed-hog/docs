@@ -24,7 +24,7 @@ jobs:
           docker build \
           --build-arg BUILD_ENV_FILE=do.build.env \
           --build-arg PROD_ENV_FILE=do.build.env \
-          -t registry.digitalocean.com/${{ vars.REGISTRY }}/${{ vars.CONTAINER_NAME }}:${{ github.sha }} . -f Dockerfile-do
+          -t registry.digitalocean.com/${{ vars.REGISTRY }}/${{ vars.CONTAINER_NAME }}:${{ github.sha }} . -f Dockerfile
 
       - name: Push Docker image
         run: |
