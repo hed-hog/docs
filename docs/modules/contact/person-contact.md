@@ -1,10 +1,10 @@
-# Contact Module
+# Person Contact Module
 
-The **Contact** module manages contacts associated with individual profiles, enabling CRUD operations and offering support for multiple contact types. This module allows you to create, retrieve, update, and delete contacts for a person and provides filtering options based on contact type or specific contact IDs.
+The **Person Contact** module manages contacts associated with individual profiles, enabling CRUD operations and offering support for multiple contact types. This module allows you to create, retrieve, update, and delete contacts for a person and provides filtering options based on contact type or specific contact IDs.
 
 ### Controller Endpoints
 
-#### `POST /person/:personId/contact`
+#### `POST /person/:personId/person-contact`
 
 - **Description**: Creates a new contact for a person.
 - **Parameters**:
@@ -12,7 +12,7 @@ The **Contact** module manages contacts associated with individual profiles, ena
 - **Body:**
   - `CreateDTO`: Data required to create the contact, including fields like type_id, value, primary, etc.
 
-#### `GET /person/:personId/contact`
+#### `GET /person/:personId/person-contact`
 
 - **Description**: Retrieves contacts associated with a specific person, with optional filtering by contact type or contact ID.
 - **Parameters**:
@@ -20,7 +20,7 @@ The **Contact** module manages contacts associated with individual profiles, ena
   - `typeId (query param, optional)`: Filters results by a specific contact type.
   - `contactId (query param, optional)`: Retrieves a specific contact by ID.
 
-#### `PATCH /person/:personId/contact/:contactId`
+#### `PATCH /person/:personId/person-contact/:contactId`
 
 - **Description**: Updates an existing contact for a person.
 - **Parameters**:
@@ -29,7 +29,7 @@ The **Contact** module manages contacts associated with individual profiles, ena
 - **Body**:
   - `UpdateDTO`: Data for updating contact fields.
 
-#### `DELETE /person/:personId/contact/:contactId`
+#### `DELETE /person/:personId/person-contact/:contactId`
 
 - **Description**: Deletes a contact associated with a person.
 - **Parameters**:
@@ -72,10 +72,8 @@ The **Contact** module manages contacts associated with individual profiles, ena
 
 ```plaintext
 |── dto/                         # Data Transfer Objects
-│   ├── create.dto.ts            # DTO for creating contacts
-│   └── update.dto.ts            # DTO for updating contacts
-|── contact.controller.ts        # Controller for contact
-|── contact.module.ts            # Module definition for contact
-|── contact.service.ts           # Service class for contact logic
-├── contact.service.spec.ts      # Testing file for contact service
+│   ├── create.dto.ts            # DTO for creating person-contacts
+│   └── update.dto.ts            # DTO for updating person-contacts
+|── person-contact.controller.ts        # Controller for person-contact
+|── person-contact.service.ts           # Service class for person-contact logic
 ```

@@ -31,13 +31,24 @@ This adds the pagination module to your project.
 
 ---
 
-| Name           | Description                                                                                                                       |
-| -------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **admin**      | Provides admin functionalities, including auth, menu, role, routes, screens, settings and user management.                        |
-| **contact**    | Manages person-related data, including CRUD operations and associations with addresses, contacts, documents and other attributes. |
-| **file**       | Provides file management capabilities, such as file uploads and storage.                                                          |
-| **locale**     | Manages localization settings, including language preferences and translations.                                                   |
-| **mail**       | Handles sending emails, including templating and SMTP configuration.                                                              |
-| **pagination** | Provides pagination support for lists and data views.                                                                             |
-| **prisma**     | Integrates [**Prisma**](https://www.prisma.io/) ORM for database management and migrations.                                       |
-| **setting**    | Provides configuration management for application settings and preferences.                                                       |
+| Name             | Description                                                                                                                       |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| **admin**        | Provides admin functionalities, including auth, core, dashboard, menu, role, routes, screens, settings and user management.       |
+| **appearance**   | Manages the visual appearance of the application, including themes and styles.                                                    |
+| **chat**         | Adds real-time chat functionality for user communication.                                                                         |
+| **contact**      | Manages person-related data, including CRUD operations and associations with addresses, contacts, documents and other attributes. |
+| **content**      | Handles content management, including creation, editing, and publishing.                                                          |
+| **country**      | Manages country-related data, such as country codes and regional settings.                                                        |
+| **faq**          | Provides a framework for managing Frequently Asked Questions (FAQ) sections.                                                      |
+| **file**         | Provides file management capabilities, such as file uploads and storage.                                                          |
+| **locale**       | Manages localization settings, including language preferences and translations.                                                   |
+| **mail**         | Handles sending emails, including templating and SMTP configuration.                                                              |
+| **mail-manager** | Offers advanced email management features, including tracking and scheduling.                                                     |
+| **page**         | Enables the creation and management of static and dynamic pages.                                                                  |
+| **pagination**   | Provides pagination support for lists and data views.                                                                             |
+| **payment**      | Integrates payment processing capabilities for various gateways.                                                                  |
+| **prisma**       | Integrates [**Prisma**](https://www.prisma.io/) ORM for database management and migrations.                                       |
+| **profile**      | Manages user profile data and customization options.                                                                              |
+| **rabbitmq**     | Integrates [**RabbitMQ**](https://www.rabbitmq.com/) for message queuing and event-driven architecture.                           |
+| **setting**      | Provides configuration management for application settings and preferences.                                                       |
+| **subscription** | Adds subscription management features, including plans, billing, and renewals.                                                    |

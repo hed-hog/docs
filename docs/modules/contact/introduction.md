@@ -20,15 +20,14 @@ npm i @hedhog/contact
 
 ### Included Modules:
 
-- **address**: Manages the address information for individuals, including storage, updates, and deletions of address records.
-- **address-type**: Provides a system for defining types of addresses (e.g., residential, business) to categorize and manage addresses.
-- **contact**: Handles contact details for individuals, such as phone numbers and email addresses, including creation, updates, and deletion.
-- **contact-type**: Manages various types of contact information (e.g., phone, email) to facilitate organized contact data management.
-- **country**: Manages country-related information, supporting internationalization and locale-specific features across the application.
-- **custom**: Provides a flexible system for managing additional customizable fields for individuals beyond default attributes.
-- **custom-type**: Allows the definition of custom field types to extend person records with specialized data points.
-- **document**: Manages documents related to individuals, such as IDs and licenses, supporting secure storage and retrieval.
-- **document-type**: Facilitates the categorization of document types (e.g., passport, driver’s license) for organized document management.
+- **person-address**: Manages the address information for individuals, including storage, updates, and deletions of address records.
+- **person-address-type**: Provides a system for defining types of addresses (e.g., residential, business) to categorize and manage addresses.
+- **person-contact**: Handles contact details for individuals, such as phone numbers and email addresses, including creation, updates, and deletion.
+- **person-contact-type**: Manages various types of contact information (e.g., phone, email) to facilitate organized contact data management.
+- **person-custom**: Provides a flexible system for managing additional customizable fields for individuals beyond default attributes.
+- **person-custom-type**: Allows the definition of custom field types to extend person records with specialized data points.
+- **person-document**: Manages documents related to individuals, such as IDs and licenses, supporting secure storage and retrieval.
+- **person-document-type**: Facilitates the categorization of document types (e.g., passport, driver’s license) for organized document management.
 - **person**: Manages individual and organizational profiles, including creation, updates, and deletion, along with support for linking associated addresses, contacts, documents, and custom attributes.
 - **person-type**: Provides a system for defining and managing types of persons (e.g., individual, company) to support diverse person profiles within the application.
 

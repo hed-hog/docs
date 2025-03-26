@@ -4,7 +4,7 @@ This document outlines the standard format for defining database tables for Hedh
 
 ## Structure
 
-Each table definition is represented as a key-value pair, where the key is the table name and the value is an object containing the table's properties. The root properties are **data** (representing the inserts on tables) and **tables** (representing the tables on database)
+Each table definition is represented as a key-value pair, where the key is the table name and the value is an object containing the table's properties. . The root properties are **data** (representing the inserts on tables), **tables** (representing the tables in the database), **screens** (representing the UI screens), and **routes** (representing API routes).
 
 ```yaml
 data: # Root property that contains application data definitions (inserts)
@@ -24,6 +24,31 @@ tables: # Root property representing the tables in the database
           column: referenced_column_name
           onDelete: delete_action # Options: CASCADE, RESTRICT, NO ACTION
     ifNotExists: true_or_false # Indicates if the table should only be created if it does not already exist
+
+screens: # Defines the UI screens of the application
+  table_name:
+    title:
+      en: Contact # Title of the screen in English
+      pt: Contatos # Title of the screen in Portuguese
+    menu: # Menu item associated with this screen
+      url: /contact/person # URL for accessing the screen in the app
+      icon: user-check # Icon displayed for this menu item
+      name:
+        en: Contact # Menu item name in English
+        pt: Contatos # Menu item name in Portuguese
+      slug: /contact/person # Slug used for routing to the screen
+    # 'screens' defines the different screens available in the UI, their titles, menu items, and URL slugs.
+    # Example: This defines a "Contact" screen that appears in both English and Portuguese, with a specific menu item to access it.
+
+routes: # Defines the routing logic for the application
+  - path: contact # Defines the main route for 'contact'
+    children: # Child routes associated with the main route
+      - path: person # A child route under 'contact'
+        lazy:
+          component: ./pages/contact/person/index.tsx # Path to the component to load lazily when this route is accessed
+    # 'routes' defines the URL paths and the components associated with them.
+    # Example: The 'contact' path has a child 'person' path, which loads the component located at './pages/contact/person/index.tsx'.
+    # The 'lazy' property indicates that the component is loaded only when the route is visited.
 ```
 
 ## Properties

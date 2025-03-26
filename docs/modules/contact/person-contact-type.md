@@ -1,29 +1,29 @@
-# Contact Type Module
+# Person Contact Type Module
 
-**Contact Type** module manages different categories or types of contacts, supporting internationalization, pagination, and CRUD operations. This allows admins to define and maintain the types of contacts associated with person records.
+**Person Contact Type** module manages different categories or types of contacts, supporting internationalization, pagination, and CRUD operations. This allows admins to define and maintain the types of contacts associated with person records.
 
 ### Controller Endpoints
 
-#### `POST /contact-type`
+#### `POST /person-contact-type`
 
 - **Description**: Creates a new contact type.
 - **Body**:
   - `CreateDTO`: The data required to create a contact type, including fields like name and optional translations.
 
-#### `GET /contact-type`
+#### `GET /person-contact-type`
 
 - **Description**: Retrieves paginated contact types, including localized translations based on the provided locale.
 - **Parameters**:
   - `paginationParams (query)`: Optional pagination parameters from @hedhog/pagination.
   - `locale (query)`: The locale code for retrieving contact type translations.
 
-#### `GET /contact-type/:id`
+#### `GET /person-contact-type/:id`
 
 - **Description**: Retrieves a contact type by its ID.
 - **Parameters**:
   - `id (URL param)`: The unique ID of the contact type.
 
-#### `PATCH /contact-type/:id`
+#### `PATCH /person-contact-type/:id`
 
 - **Description**: Updates an existing contact type.
 - **Parameters**:
@@ -31,7 +31,7 @@
 - **Body**:
   - `UpdateDTO`: Updated data for the contact type, including translated values.
 
-#### `DELETE /contact-type`
+#### `DELETE /person-contact-type`
 
 - **Description**: Deletes multiple contact types by their IDs.
 - **Body**:
@@ -75,10 +75,9 @@
 
 ```plaintext
 |── dto/                              # Data Transfer Objects
-│   ├── create.dto.ts                 # DTO for creating contact-types
-│   └── update.dto.ts                 # DTO for updating contact-types
-|── contact-type.controller.ts        # Controller for contact-type
-|── contact-type.module.ts            # Module definition for contact-type
-|── contact-type.service.ts           # Service class for contact-type logic
-├── contact-type.service.spec.ts      # Testing file for contact-type service
+│   ├── create.dto.ts                 # DTO for creating person-contact-types
+│   └── update.dto.ts                 # DTO for updating person-contact-types
+|── person-contact-type.controller.ts        # Controller for person-contact-type
+|── person-contact-type.module.ts            # Module definition for person-contact-type
+|── person-contact-type.service.ts           # Service class for person-contact-type logic
 ```

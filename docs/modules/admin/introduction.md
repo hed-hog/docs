@@ -7,6 +7,7 @@ Whether you need to secure access to resources, manage user roles, or handle fil
 ### Included Modules
 
 - **@hedhog/auth**: Provides authentication and authorization mechanisms, ensuring secure access to application resources.
+- **@hedhog/core**: Provides essential functionalities for monitoring and managing the runtime environment of the application.
 - **@hedhog/menu**: Allows for the creation and management of dynamic menus within the application interface.
 - **@hedhog/role**: Facilitates the management of roles, controlling access to specific features or areas.
 - **@hedhog/route**: Provides a comprehensive system for managing routes within your application.

@@ -1,17 +1,17 @@
-# Document Module
+# Person Document Module
 
-The **Document** module handles operations related to documents associated with persons, including CRUD operations and pagination. It allows retrieving documents based on various criteria, such as document ID and type ID.
+The **Person Document** module handles operations related to documents associated with persons, including CRUD operations and pagination. It allows retrieving documents based on various criteria, such as document ID and type ID.
 
 ### Controller Endpoints
 
-#### `POST /person/:personId/document`
+#### `POST /person/:personId/person-document`
 
 - **Description**: Creates a new document for a specified person.
 - **Parameters**:
   - `personId` (path): ID of the person associated with the document.
   - `data` (body): Document data as defined in `CreateDTO`.
 
-#### `GET /person/:personId/document`
+#### `GET /person/:personId/person-document`
 
 - **Description**: Retrieves documents for a specified person, with optional filtering by `typeId` or `documentId`.
 - **Parameters**:
@@ -19,7 +19,7 @@ The **Document** module handles operations related to documents associated with 
   - `typeId` (query): Optional type ID to filter documents by type.
   - `documentId` (query): Optional document ID to retrieve a specific document.
 
-#### `PATCH /person/:personId/document/:documentId`
+#### `PATCH /person/:personId/person-document/:documentId`
 
 - **Description**: Updates a specific document associated with a person.
 - **Parameters**:
@@ -27,7 +27,7 @@ The **Document** module handles operations related to documents associated with 
   - `documentId` (path): ID of the document to be updated.
   - `data` (body): Document data as defined in `UpdateDTO`.
 
-#### `DELETE /person/:personId/document/:documentId`
+#### `DELETE /person/:personId/person-document/:documentId`
 
 - **Description**: Deletes a specific document.
 - **Parameters**:
@@ -70,10 +70,8 @@ The **Document** module handles operations related to documents associated with 
 
 ```plaintext
 ├── dto
-│   ├── create.dto.ts            # DTO for creating a document
-│   └── update.dto.ts            # DTO for updating a document
-|── document.controller.ts       # Controller for document routes
-|── document.module.ts           # Module definition for documents
-|── document.service.ts          # Service class for document operations
-├── document.service.spec.ts     # Testing file for document service
+│   ├── create.dto.ts            # DTO for creating a person-document
+│   └── update.dto.ts            # DTO for updating a person-document
+|── person-document.controller.ts       # Controller for person-document routes
+|── person-document.service.ts          # Service class for person-document operations
 ```

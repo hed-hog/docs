@@ -79,5 +79,4 @@ The **Person Type** module manages person type classifications used for categori
 |── person-type.controller.ts         # Controller for person type routes
 |── person-type.module.ts             # Module definition for person types
 |── person-type.service.ts            # Service class for person type operations
-├── person-type.service.spec.ts       # Testing file for person type service
 ```

@@ -1,10 +1,10 @@
-# Address Module
+# Person Address Module
 
-The **Address** module provides comprehensive tools to manage addresses associated with individual or organizational profiles. This module allows for CRUD operations on addresses, supporting various address types and filtering capabilities.
+The **Person Address** module provides comprehensive tools to manage addresses associated with individual or organizational profiles. This module allows for CRUD operations on addresses, supporting various address types and filtering capabilities.
 
 ### Controller Endpoints
 
-#### `POST /person/:personId/address`
+#### `POST /person/:personId/person-address`
 
 - **Description**: Creates a new address for a person.
 - **Parameters**:
@@ -12,7 +12,7 @@ The **Address** module provides comprehensive tools to manage addresses associat
 - **Body**:
   - `CreateDTO`: Data required to create the address, including fields like country_id, type_id, street, city, postal_code, and more.
 
-#### `GET /person/:personId/address`
+#### `GET /person/:personId/person-address`
 
 - **Description**: Retrieves addresses for a specific person, optionally filtered by typeId or addressId.
 - **Parameters**:
@@ -20,7 +20,7 @@ The **Address** module provides comprehensive tools to manage addresses associat
   - `typeId (query param, optional)`: Filters results by a specific address type.
   - `addressId (query param, optional)`: Retrieves a specific address by ID.
 
-#### `PATCH /person/:personId/address/:addressId`
+#### `PATCH /person/:personId/person-address/:addressId`
 
 - **Description**: Updates an existing address.
 - **Parameters**:
@@ -29,7 +29,7 @@ The **Address** module provides comprehensive tools to manage addresses associat
 - **Body**:
   - `UpdateDTO (body)`: Data for updating the address fields.
 
-#### `DELETE /person/:personId/address/:addressId`
+#### `DELETE /person/:personId/person-address/:addressId`
 
 - **Description**: Deletes an address.
 - **Body**:
@@ -74,8 +74,6 @@ The **Address** module provides comprehensive tools to manage addresses associat
 |── dto/                         # Data Transfer Objects
 │   ├── create.dto.ts            # DTO for creating addresses
 │   └── update.dto.ts            # DTO for updating addresses
-|── address.controller.ts        # Controller for address
-|── address.module.ts            # Module definition for address
-|── address.service.ts           # Service class for address logic
-├── address.service.spec.ts      # Testing file for address service
+|── person-address.controller.ts        # Controller for person-address
+|── person-address.service.ts           # Service class for person-address logic
 ```

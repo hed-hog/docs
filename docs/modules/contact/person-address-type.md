@@ -1,29 +1,29 @@
-# Address Type Module
+# Person Address Type Module
 
-**Address Type** module provides management capabilities for address types within a system, enabling CRUD operations and localization features. This module is especially useful for applications that require multiple address categorizations (e.g., residential, commercial) with support for multi-language labels.
+**Person Address Type** module provides management capabilities for address types within a system, enabling CRUD operations and localization features. This module is especially useful for applications that require multiple address categorizations (e.g., residential, commercial) with support for multi-language labels.
 
 ### Controller Endpoints
 
-#### `POST /address-type`
+#### `POST /person-address-type`
 
 - **Description**: Creates a new address type.
 - **Body**:
   - `CreateDTO`: The data required to create an address type, including fields like name and additional optional properties.
 
-#### `GET /address-type`
+#### `GET /person-address-type`
 
 - **Description**: Retrieves all address types, supporting pagination and localization.
 - **Parameters**:
   - `paginationParams (query param, optional)`: Controls pagination parameters (page, limit).
   - `locale (query param, optional)`: The locale code to filter address type translations.
 
-#### `GET /address-type/:id`
+#### `GET /person-address-type/:id`
 
 - **Description**: Retrieves a specific address type by its ID.
 - **Parameters**:
   - `id (URL param)`: The unique ID of the address type.
 
-#### `PATCH /address-type/:id`
+#### `PATCH /person-address-type/:id`
 
 - **Description**: Updates an existing address type.
 - **Parameters**:
@@ -31,7 +31,7 @@
 - **Body**:
   - `UpdateDTO`: Data for updating the address type’s properties.
 
-#### `DELETE /address-type`
+#### `DELETE /person-address-type`
 
 - **Description**: Deletes one or more address types.
 - **Body**:
@@ -75,10 +75,9 @@
 
 ```plaintext
 |── dto/                              # Data Transfer Objects
-│   ├── create.dto.ts                 # DTO for creating address types
-│   └── update.dto.ts                 # DTO for updating address types
-|── address-type.controller.ts        # Controller for address-type
-|── address-type.module.ts            # Module definition for address-type
-|── address-type.service.ts           # Service class for address-type logic
-├── address-type.service.spec.ts      # Testing file for address-type service
+│   ├── create.dto.ts                 # DTO for creating person-address types
+│   └── update.dto.ts                 # DTO for updating person-address types
+|── person-address-type.controller.ts        # Controller for person-address-type
+|── person-address-type.module.ts            # Module definition for person-address-type
+|── person-address-type.service.ts           # Service class for person-address-type logic
 ```

@@ -1,36 +1,36 @@
-# Document Type Module
+# Person Document Type Module
 
-The **Document Type** module manages document type definitions used for categorizing documents associated with persons. It includes operations for creating, reading, updating, and deleting document types, with support for pagination and localization.
+The **Person Document Type** module manages document type definitions used for categorizing documents associated with persons. It includes operations for creating, reading, updating, and deleting document types, with support for pagination and localization.
 
 ### Controller Endpoints
 
-#### `POST /document-type`
+#### `POST /person-document-type`
 
 - **Description**: Creates a new document type.
 - **Parameters**:
   - `data` (body): Document type data as defined in `CreateDTO`.
 
-#### `GET /document-type`
+#### `GET /person-document-type`
 
 - **Description**: Retrieves all document types with optional pagination and locale-based translations.
 - **Parameters**:
   - `paginationParams` (query): Optional pagination parameters.
   - `locale` (header): Locale for fetching translated document type names.
 
-#### `GET /document-type/:id`
+#### `GET /person-document-type/:id`
 
 - **Description**: Retrieves a document type by its unique ID.
 - **Parameters**:
   - `id` (path): ID of the document type.
 
-#### `PATCH /document-type/:id`
+#### `PATCH /person-document-type/:id`
 
 - **Description**: Updates a specific document type.
 - **Parameters**:
   - `id` (path): ID of the document type.
   - `data` (body): Document type data to update as defined in `UpdateDTO`.
 
-#### `DELETE /document-type`
+#### `DELETE /person-document-type`
 
 - **Description**: Deletes multiple document types by ID.
 - **Parameters**:
@@ -74,10 +74,9 @@ The **Document Type** module manages document type definitions used for categori
 
 ```plaintext
 ├── dto
-│   ├── create.dto.ts                 # DTO for creating a document type
-│   ├── update.dto.ts                 # DTO for updating a document type
-|── document-type.controller.ts       # Controller for document type routes
-|── document-type.module.ts           # Module definition for document types
-|── document-type.service.ts          # Service class for document type operations
-├── document-type.service.spec.ts     # Testing file for document type service
+│   ├── create.dto.ts                 # DTO for creating a person-document type
+│   ├── update.dto.ts                 # DTO for updating a person-document type
+|── person-document-type.controller.ts       # Controller for person-document type routes
+|── person-document-type.module.ts           # Module definition for person-document types
+|── person-document-type.service.ts          # Service class for person-document type operations
 ```

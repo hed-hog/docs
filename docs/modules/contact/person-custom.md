@@ -1,17 +1,17 @@
-# Custom Module
+# Person Custom Module
 
-The **Custom** module is used to manage custom data associated with persons. This module includes a controller to handle various endpoints for CRUD operations on custom data and a service to interact with the database via `PrismaService`.
+The **Person Custom** module is used to manage custom data associated with persons. This module includes a controller to handle various endpoints for CRUD operations on custom data and a service to interact with the database via `PrismaService`.
 
 ### Controller Endpoints
 
-#### `POST /person/:personId/custom`
+#### `POST /person/:personId/person-custom`
 
 - **Description**: Creates a custom record for a specific person.
 - **Parameters**:
   - `personId` (path): ID of the person.
   - `data` (body): Object containing custom data (`name`, `value`, etc.) as defined in `CreateDTO`.
 
-#### `GET /person/:personId/custom`
+#### `GET /person/:personId/person-custom`
 
 - **Description**: Retrieves a list of all custom records for a specific person.
 - **Parameters**:
@@ -19,7 +19,7 @@ The **Custom** module is used to manage custom data associated with persons. Thi
   - `typeId` (query, optional): Filters custom records by type.
   - `id` (query, optional): Retrieves a specific custom record by ID if provided.
 
-#### `PATCH /person/:personId/custom/:customId`
+#### `PATCH /person/:personId/person-custom/:customId`
 
 - **Description**: Updates a specific custom record.
 - **Parameters**:
@@ -27,7 +27,7 @@ The **Custom** module is used to manage custom data associated with persons. Thi
   - `customId` (path): ID of the custom record.
   - `data` (body): Object containing updated custom data fields as defined in `UpdateDTO`.
 
-#### `DELETE /person/:personId/custom/:customId`
+#### `DELETE /person/:personId/person-custom/:customId`
 
 - **Description**: Deletes a specific custom record.
 - **Parameters**:
@@ -70,10 +70,8 @@ The **Custom** module is used to manage custom data associated with persons. Thi
 
 ```plaintext
 |── dto/                         # Data Transfer Objects
-│   ├── create.dto.ts            # DTO for creating customs
-│   └── update.dto.ts            # DTO for updating customs
-|── custom.controller.ts         # Controller for custom
-|── custom.module.ts             # Module definition for custom
-|── custom.service.ts            # Service class for custom logic
-├── custom.service.spec.ts       # Testing file for custom service
+│   ├── create.dto.ts            # DTO for creating person-customs
+│   └── update.dto.ts            # DTO for updating person-customs
+|── person-custom.controller.ts         # Controller for person-custom
+|── person-custom.service.ts            # Service class for person-custom logic
 ```
