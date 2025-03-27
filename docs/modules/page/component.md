@@ -1,4 +1,4 @@
-# Component Submodule
+# Component
 
 The **Component** submodule provides a powerful framework for managing reusable components within your application. Components can represent anything from UI elements to functional building blocks within your system, such as buttons, modals, or other modular units. This submodule allows you to efficiently create, update, delete, and retrieve components, with full support for pagination and flexible querying.
 

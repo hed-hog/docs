@@ -1,4 +1,4 @@
-# Subscription Value Submodule
+# Subscription Value
 
 The **Subscription Value** submodule manages the values associated with a subscription, such as subscription-related parameters or pricing details. It allows the creation, updating, retrieval, and deletion of subscription values.
 

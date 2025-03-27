@@ -1,4 +1,4 @@
-# Subscription Listener Submodule
+# Subscription Listener
 
 The **Subscription Listener** submodule listens for payment-related subscription events and processes them accordingly. It ensures that subscription updates, cancellations, and renewals are handled efficiently.
 

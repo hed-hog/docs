@@ -1,4 +1,4 @@
-# Payment Method Item Submodule
+# Payment Method Item
 
 The **Payment Method Item** submodule manages the specific items associated with various payment methods. It allows for the creation, updating, deletion, and retrieval of payment method items, providing fine-grained control over the available options under each payment method.
 

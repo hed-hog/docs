@@ -1,6 +1,6 @@
-# Subscription Create Submodule
+# Subscription Create
 
-The **Subscription Create Submodule** is responsible for handling the creation of new subscriptions. It allows users to create subscriptions with a defined plan, a limit on the number of people, and specified roles for each person in the subscription. This module integrates with Prisma for database interactions, ensuring smooth creation and validation of subscription data.
+The **Subscription Create** submodule is responsible for handling the creation of new subscriptions. It allows users to create subscriptions with a defined plan, a limit on the number of people, and specified roles for each person in the subscription. This module integrates with Prisma for database interactions, ensuring smooth creation and validation of subscription data.
 
 ### Features
 

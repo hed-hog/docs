@@ -1,4 +1,4 @@
-# Instance Prop Submodule
+# Instance Prop
 
 The **Instance Prop** submodule provides functionality for managing properties associated with instances in your application. Instance properties allow the assignment of specific values to different instances, offering flexibility in the way you configure and interact with components in your system. This submodule provides the ability to create, update, delete, and retrieve instance properties, all with a focus on efficiency and ease of use.
 

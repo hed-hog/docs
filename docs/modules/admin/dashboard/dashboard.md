@@ -1,6 +1,6 @@
-# Dashboard Module
+# Dashboard
 
-The **Dashboard Module** allows users to create and manage custom dashboards. It provides functionalities for retrieving, creating, updating, and deleting dashboards while supporting localization and pagination.
+The **Dashboard** submodule allows users to create and manage custom dashboards. It provides functionalities for retrieving, creating, updating, and deleting dashboards while supporting localization and pagination.
 
 ### Features
 

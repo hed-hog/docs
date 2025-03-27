@@ -1,4 +1,4 @@
-# Mail Sent Submodule
+# Mail Sent
 
 The **Mail Sent** submodule provides functionality to manage sent emails within the application. It allows creating, updating, listing, and deleting sent emails, offering a simple interface to handle email data. The module integrates pagination for listing emails and allows filtering by several fields such as subject, sender, and recipients.
 

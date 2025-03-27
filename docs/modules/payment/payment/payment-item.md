@@ -1,4 +1,4 @@
-# Payment Item Submodule
+# Payment Item
 
 The **Payment Item** submodule is used for managing individual items in a payment. It provides functionality to create, retrieve, update, and delete items within a payment record. It supports pagination and filtering of payment items.
 

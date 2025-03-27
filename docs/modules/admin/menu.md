@@ -1,4 +1,4 @@
-# Menu Module
+# Menu
 
 **HedHog Menu** is a library for managing menus within the HedHog framework. It provides a set of RESTful endpoints for CRUD operations on menu items, as well as functionalities to handle pagination and ordering of menus.
 

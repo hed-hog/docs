@@ -1,4 +1,4 @@
-# Payment Coupon Item Submodule
+# Payment Coupon Item
 
 The **Payment Coupon Item** submodule manages the association between coupons and specific items. It enables the creation, updating, deletion, and retrieval of coupon items, allowing for fine-grained discount application on selected products.
 

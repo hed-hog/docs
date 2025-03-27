@@ -1,6 +1,6 @@
-# Route Module
+# Route
 
-**Hedhog Route** module provides a comprehensive system for managing routes within your application. It allows administrators to define, modify, and control access to different routes within the application. The module also integrates with other Hedhog modules to ensure that permissions and roles are respected when accessing routes.
+**Hedhog Route** submodule provides a comprehensive system for managing routes within your application. It allows administrators to define, modify, and control access to different routes within the application. The submodule also integrates with other Hedhog modules to ensure that permissions and roles are respected when accessing routes.
 
 ### Features
 

@@ -1,6 +1,6 @@
-# Dashboard Item Module
+# Dashboard Item
 
-The **Dashboard Item** module is responsible for linking dashboard components to dashboards. It facilitates the association between dashboard components and their respective dashboards, ensuring a structured and manageable relationship between these elements.
+The **Dashboard Item** submodule is responsible for linking dashboard components to dashboards. It facilitates the association between dashboard components and their respective dashboards, ensuring a structured and manageable relationship between these elements.
 
 ### Features
 

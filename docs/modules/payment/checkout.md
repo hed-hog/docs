@@ -1,6 +1,6 @@
-# 🛒 Checkout Submodule
+# 🛒 Checkout
 
-The **Checkout Submodule** enables the management of various payment-related functionalities, offering support for multiple payment gateways, including credit card and Pix transactions, as well as managing subscriptions, payment resets, and coupon usage. This submodule integrates with various providers like Mercado Pago and is designed to support both standard and subscription-based payment flows.
+The **Checkout** submodule enables the management of various payment-related functionalities, offering support for multiple payment gateways, including credit card and Pix transactions, as well as managing subscriptions, payment resets, and coupon usage. This submodule integrates with various providers like Mercado Pago and is designed to support both standard and subscription-based payment flows.
 
 ### Features
 

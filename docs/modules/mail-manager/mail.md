@@ -1,6 +1,6 @@
-# Mail Submodule
+# Mail
 
-The **Mail Submodule** is responsible for managing email records within the system. It allows the creation, updating, listing, and deletion of mail items. This module integrates with locale management to ensure that emails are handled with language-specific data, making it essential for applications with internationalization support.
+The **Mail** submodule is responsible for managing email records within the system. It allows the creation, updating, listing, and deletion of mail items. This module integrates with locale management to ensure that emails are handled with language-specific data, making it essential for applications with internationalization support.
 
 ### Features
 

@@ -2,7 +2,7 @@
 
 **Hedhog Locale** module provides a powerful solution for managing locales and translations across applications. It includes functionalities to retrieve, create, update, and delete locale data, with support for pagination and localization. The module integrates seamlessly within the HedHog ecosystem, using @hedhog/pagination for handling paginated responses and @hedhog/prisma for database interactions.
 
-## Features
+### Features
 
 - **Locale Management**: Comprehensive CRUD operations for managing locale data.
 - **Translation Retrieval**: Fetch translations for specific locales and namespaces.
@@ -10,15 +10,7 @@
 - **Localization**: Seamless integration with the HedHog ecosystem for localized content.
 - **Middleware and Decorators**: Tools for injecting and processing locale data in requests.
 
-## Installation
-
-To install the `@hedhog/locale` module, use the following command:
-
-```bash
-npm i @hedhog/locale
-```
-
-## Controller Endpoints
+### Controller Endpoints
 
 #### `GET /locale/system/enabled`
 
@@ -81,7 +73,7 @@ npm i @hedhog/locale
 - **Body**:
   - `ids (number[])`: Array of locale IDs to delete.
 
-## Service Methods
+### Service Methods
 
 #### `setEnabled(codes: string[])`
 
@@ -145,6 +137,29 @@ npm i @hedhog/locale
 - **Description**: Deletes one or more locale entries.
 - **Parameters**:
   - `data (DeleteDTO)`: Includes array of IDs to delete.
+
+### Installation
+
+To install the `@hedhog/locale` module, use the following command:
+
+```bash
+npm i @hedhog/locale
+```
+
+### Usage
+
+Once installed, you can integrate the Locale module into your project to manage locale-related operations seamlessly.
+
+```typescript
+import { LocaleModule } from "@hedhog/locale";
+
+@Module({
+  imports: [LocaleModule],
+})
+export class AppModule {}
+```
+
+By importing the `LocaleModule`, you gain access to all the functionality provided by the module, including locale management, translation retrieval, and localization support. This makes it easier to handle multilingual content and streamline locale-related workflows in your application.
 
 ### Folder Structure
 

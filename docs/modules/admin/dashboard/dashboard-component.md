@@ -1,6 +1,6 @@
-# Dashboard Component Module
+# Dashboard Component
 
-The **Dashboard Component Module** enables the creation and management of custom components that can be inserted into dashboards. It provides full CRUD functionality while supporting localization and pagination.
+The **Dashboard Component** submodule enables the creation and management of custom components that can be inserted into dashboards. It provides full CRUD functionality while supporting localization and pagination.
 
 ### Features
 

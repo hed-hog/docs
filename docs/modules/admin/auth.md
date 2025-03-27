@@ -1,4 +1,4 @@
-# Auth Module
+# Auth
 
 **HedHog Auth** is a library designed to handle authentication tasks within the HedHog framework. It provides functionalities for user login, token management, multi-factor authentication (MFA), and password reset, ensuring secure and reliable user authentication processes.
 

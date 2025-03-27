@@ -1,4 +1,4 @@
-# Payment Coupon Submodule
+# Payment Coupon
 
 The **Payment Coupon** submodule provides functionality for managing discount coupons within the system. It allows for creating, updating, deleting, and retrieving coupons, integrating them with products and discount types to facilitate promotions and special offers.
 

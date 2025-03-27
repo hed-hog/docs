@@ -10,14 +10,6 @@
 - **Address Handling**: Tracks multiple address types (e.g., residential, commercial) for each person.
 - **Custom Attributes**: Allows the addition of custom attributes to extend the person entity.
 
-### Installation
-
-This library is an integral part of the Hedhog framework and should be installed as a dependency in your Hedhog project.
-
-```bash
-npm i @hedhog/contact
-```
-
 ### Included Modules:
 
 - **person-address**: Manages the address information for individuals, including storage, updates, and deletions of address records.
@@ -31,70 +23,93 @@ npm i @hedhog/contact
 - **person**: Manages individual and organizational profiles, including creation, updates, and deletion, along with support for linking associated addresses, contacts, documents, and custom attributes.
 - **person-type**: Provides a system for defining and managing types of persons (e.g., individual, company) to support diverse person profiles within the application.
 
-## Controller Endpoints
+### Controller Endpoints
 
-### `POST /person`
+#### `POST /person`
 
 - **Description**: Creates a new person in the system.
 - **Parameters**:
   - `data` (body): Data for the person, defined in `CreateDTO`.
 
-### `GET /person`
+#### `GET /person`
 
 - **Description**: Retrieves all persons with pagination and locale-based translations.
 - **Parameters**:
   - `paginationParams` (query): Optional pagination parameters.
   - `locale` (header): Locale to fetch translated names of person types.
 
-### `GET /person/:id`
+#### `GET /person/:id`
 
 - **Description**: Retrieves a person by their ID.
 - **Parameters**:
   - `id` (path): Unique identifier of the person.
 
-### `PATCH /person/:id`
+#### `PATCH /person/:id`
 
 - **Description**: Updates a specific person's details.
 - **Parameters**:
   - `id` (path): Unique identifier of the person.
   - `data` (body): Data for updating, defined in `UpdateDTO`.
 
-### `DELETE /person`
+#### `DELETE /person`
 
 - **Description**: Deletes multiple persons by their IDs.
 - **Parameters**:
   - `data` (body): Array of person IDs to delete, defined in `DeleteDTO`.
 
-## Service Methods
+### Service Methods
 
-### `create(data: CreateDTO)`
+#### `create(data: CreateDTO)`
 
 - **Description**: Creates a new person in the database.
 - **Parameters**:
   - `data`: Object containing person information as defined in `CreateDTO`.
 
-### `list(paginationParams: PaginationDTO)`
+#### `list(paginationParams: PaginationDTO)`
 
 - **Description**: Retrieves all persons with pagination.
 - **Parameters**:
   - `locale`: Locale to fetch translated names of person-related data.
   - `paginationParams`: Pagination parameters.
 
-### `get(id: number)`
+#### `get(id: number)`
 
 - **Description**: Retrieves a person by their unique ID.
 - **Parameters**:
   - `id`: Unique identifier of the person.
 
-### `update(id: number, data: UpdateDTO)`
+#### `update(id: number, data: UpdateDTO)`
 
 - **Description**: Updates a person's details in the database.
 - **Parameters**:
   - `id`: Unique identifier of the person to be updated.
   - `data`: Data for updating, as defined in `UpdateDTO`.
 
-### `delete(data: DeleteDTO)`
+#### `delete(data: DeleteDTO)`
 
 - **Description**: Deletes multiple persons from the database by their IDs.
 - **Parameters**:
   - `data`: Object containing an array of person IDs to delete.
+
+### Installation
+
+This library is an integral part of the Hedhog framework and should be installed as a dependency in your Hedhog project.
+
+```bash
+npm i @hedhog/contact
+```
+
+### Usage
+
+Once installed, you can integrate the Contact module into your project to manage person-related data effectively.
+
+```typescript
+import { ContactModule } from "@hedhog/contact";
+
+@Module({
+  imports: [ContactModule],
+})
+export class AppModule {}
+```
+
+By importing the ContactModule, you gain access to all the functionality provided by the module, making it easier to handle persons, their documents, contacts, addresses, and custom attributes.

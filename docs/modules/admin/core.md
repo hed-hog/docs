@@ -1,6 +1,6 @@
-# Core Module
+# Core
 
-The **Core Module** provides essential functionalities for monitoring and managing the runtime environment of the application. It offers features such as retrieving system information, CPU usage, memory, disk usage, user activity, module versions, and database health.
+The **Core** submodule provides essential functionalities for monitoring and managing the runtime environment of the application. It offers features such as retrieving system information, CPU usage, memory, disk usage, user activity, module versions, and database health.
 
 ### Features
 

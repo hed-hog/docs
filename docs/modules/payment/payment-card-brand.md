@@ -1,4 +1,4 @@
-# Payment Card Brand Submodule
+# Payment Card Brand
 
 The **Payment Card Brand** submodule provides functionality for managing card brands within the payment system. It allows the creation, updating, deletion, and retrieval of different card brands, ensuring a structured way to handle supported payment card providers.
 

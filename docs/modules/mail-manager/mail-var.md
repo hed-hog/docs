@@ -1,4 +1,4 @@
-# Mail Var Submodule
+# Mail Var
 
 The **Mail Var** submodule provides functionality to manage mail variables, such as email templates and dynamic content placeholders. This submodule allows the creation, updating, listing, and deletion of mail variables, supporting an efficient approach to handling dynamic content within email templates.
 

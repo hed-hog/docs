@@ -1,4 +1,4 @@
-# Subscription Payment Submodule
+# Subscription Payment
 
 The **Subscription Payment** submodule manages subscription payment details for a given subscription. It allows creating, updating, retrieving, and deleting payments associated with a subscription.
 

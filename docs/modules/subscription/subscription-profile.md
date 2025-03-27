@@ -1,4 +1,4 @@
-# Subscription Profile Submodule
+# Subscription Profile
 
 The **Subscription Profile** submodule provides functionalities for retrieving and managing the subscription details and associated tokens for users. It includes methods to get active subscriptions and generate subscription tokens for a user.
 

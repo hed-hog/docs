@@ -1,4 +1,4 @@
-# Component Prop Type Submodule
+# Component Prop Type
 
 The **Component Prop Type** submodule allows you to manage types of properties associated with components. In modern systems, components often have different types of properties, each with specific attributes or characteristics. This submodule provides an organized way to manage these property types, enabling the creation, updating, deletion, and retrieval of component property types with full support for pagination and localization.
 

@@ -1,4 +1,4 @@
-# Item Submodule
+# Item
 
 The **Item** submodule provides functionality for managing items within your system. Items represent products or services with associated attributes such as name, price, and discount relationships. This submodule enables the creation, updating, deletion, and retrieval of items, offering a streamlined approach to managing them efficiently.
 

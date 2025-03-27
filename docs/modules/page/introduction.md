@@ -28,6 +28,21 @@ To install the `@hedhog/page` module, use the following command:
 npm i @hedhog/page
 ```
 
+### Usage
+
+Once installed, you can integrate the Page module into your project to manage components, instances, and their properties seamlessly.
+
+```typescript
+import { PageModule } from "@hedhog/page";
+
+@Module({
+  imports: [PageModule],
+})
+export class AppModule {}
+```
+
+By importing the `PageModule`, you gain access to all the functionality provided by the module, including managing components, instances, and their properties. This makes it easier to handle dynamic content and streamline component-related operations in your application.
+
 ---
 
 With **@hedhog/page**, you can efficiently manage your application's components and instances, making it easy to customize their properties and behaviors, all within a clean, paginated, and easily searchable structure. This unified module enables scalability, flexibility, and seamless data management, boosting your productivity and ensuring consistency across your application.

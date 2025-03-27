@@ -2,7 +2,7 @@
 
 **Hedhog Setting** module provides a comprehensive solution for managing application settings. It includes functionalities to create, read, update, and delete settings, along with support for pagination and search capabilities. This module integrates with the HedHog ecosystem, utilizing @hedhog/pagination for managing paginated results and @hedhog/prisma for database interactions.
 
-## Features
+### Features
 
 - **CRUD Operations**: Create, read, update, and delete settings.
 - **Pagination**: Efficiently manage large sets of settings with pagination.
@@ -11,13 +11,7 @@
 - **Group Management**: Organize settings into groups for better management.
 - **Transaction Support**: Update multiple settings in a single transaction.
 
-## Installation
-
-```bash
-  npm i @hedhog/setting
-```
-
-## Controller Endpoints
+### Controller Endpoints
 
 #### `GET /setting`
 
@@ -55,7 +49,7 @@
 - **Body**:
   - **ids** (number[]): Array of setting IDs to delete.
 
-## Service Methods
+### Service Methods
 
 #### `setManySettings(data: SettingDTO)`
 
@@ -117,7 +111,30 @@
 - **Parameters**:
   - **data**: Includes array of ids to delete.
 
-## Folder Structure
+### Installation
+
+To install the `@hedhog/setting` module, use the following command:
+
+```bash
+npm i @hedhog/setting
+```
+
+### Usage
+
+Once installed, you can integrate the Setting module into your project to manage application settings seamlessly.
+
+```typescript
+import { SettingModule } from "@hedhog/setting";
+
+@Module({
+  imports: [SettingModule],
+})
+export class AppModule {}
+```
+
+By importing the `SettingModule`, you gain access to all the functionality provided by the module, including creating settings, updating configurations, retrieving setting data, and managing settings in groups. This simplifies the handling of application settings and ensures efficient management of configuration data in your application.
+
+### Folder Structure
 
 ```plaintext
 |── dto/                     # Data Transfer Objects

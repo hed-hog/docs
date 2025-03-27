@@ -1,4 +1,4 @@
-# Payment Gateway Submodule
+# Payment Gateway
 
 The **Payment Gateway** submodule manages different payment gateways available in the system. It enables the creation, updating, deletion, and retrieval of payment gateways, ensuring seamless integration with external payment providers.
 

@@ -1,6 +1,6 @@
-# Dashboard User Module
+# Dashboard User
 
-The **Dashboard User** module allows users to override dashboard configurations, providing a personalized experience for each user.
+The **Dashboard User** submodule allows users to override dashboard configurations, providing a personalized experience for each user.
 
 ### Features
 

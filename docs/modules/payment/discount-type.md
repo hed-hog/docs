@@ -1,4 +1,4 @@
-# Discount Type Submodule
+# Discount Type
 
 The **Discount Type** submodule provides functionality for managing different types of discounts within the system. This submodule allows users to create, update, delete, and retrieve discount types, enabling efficient categorization and management of discount strategies.
 

@@ -1,6 +1,6 @@
-# Chat Room Person Module
+# Chat Room Person
 
-The **Chat Room Person** module allows managing the participants of a chat room. It includes functionality for adding, removing, and updating users within a chat room, along with retrieving information about specific participants.
+The **Chat Room Person** submodule allows managing the participants of a chat room. It includes functionality for adding, removing, and updating users within a chat room, along with retrieving information about specific participants.
 
 ### Features
 

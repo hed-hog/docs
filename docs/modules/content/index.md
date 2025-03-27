@@ -30,14 +30,6 @@ The **Content Module** is primarily designed to manage static pages such as Term
 - `update({ id, data }: { id: number, data: UpdateDTO })`: Update an existing content entry with the provided data, including localization.
 - `delete({ ids }: DeleteDTO)`: Delete one or more content entries by their IDs.
 
-### Installation
-
-To install the `@hedhog/content` module, use the following command:
-
-```bash
-npm i @hedhog/content
-```
-
 ### Folder Structure
 
 ```plaintext
@@ -49,6 +41,25 @@ npm i @hedhog/content
 │   ├── update.dto.ts        # DTO for updating content entries
 ```
 
----
+### Installation
 
-This module allows you to efficiently manage content in your application, including localization and pagination, making it an essential part of any Hedhog-based application.
+To install the `@hedhog/content` module, use the following command:
+
+```bash
+npm i @hedhog/content
+```
+
+### Usage
+
+Once installed, you can integrate the Content module into your project to quickly set up and manage essential features for your application's static pages.
+
+```typescript
+import { ContentModule } from "@hedhog/content";
+
+@Module({
+  imports: [ContentModule],
+})
+export class AppModule {}
+```
+
+By importing the ContentModule, you gain access to all the functionality provided by the module, making it easier to manage static pages like Terms of Use, Privacy Policy, and other localized content.

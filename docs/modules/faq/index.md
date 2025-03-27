@@ -35,6 +35,21 @@ To install the `@hedhog/faq` module, use the following command:
 npm i @hedhog/faq
 ```
 
+### Usage
+
+Once installed, you can integrate the FAQ module into your project to quickly set up and manage essential features for handling frequently asked questions.
+
+```typescript
+import { FAQModule } from "@hedhog/faq";
+
+@Module({
+  imports: [FAQModule],
+})
+export class AppModule {}
+```
+
+By importing the FAQModule, you gain access to all the functionality provided by the module, making it easier to retrieve and manage frequently asked questions (FAQs).
+
 ### Folder Structure
 
 ```plaintext

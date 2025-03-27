@@ -1,6 +1,6 @@
-# Role Module
+# Role
 
-**HedHog Role** module is designed to handle role management within the HedHog framework. It allows for creating, updating, and deleting roles and managing their relationships with users, menus, routes, and screens.
+**HedHog Role** submodule is designed to handle role management within the HedHog framework. It allows for creating, updating, and deleting roles and managing their relationships with users, menus, routes, and screens.
 
 ### Features
 

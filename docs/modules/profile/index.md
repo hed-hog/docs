@@ -34,6 +34,21 @@ To install the `@hedhog/profile` module, use the following command:
 npm i @hedhog/profile
 ```
 
+### Usage
+
+Once installed, you can integrate the Profile module into your project to manage user profiles seamlessly.
+
+```typescript
+import { ProfileModule } from "@hedhog/profile";
+
+@Module({
+  imports: [ProfileModule],
+})
+export class AppModule {}
+```
+
+By importing the `ProfileModule`, you gain access to all the functionality provided by the module, including creating user profiles, updating user information, retrieving profile data, and securely closing accounts. This simplifies the management of user profiles and ensures secure handling of personal data in your application.
+
 ### Folder Structure
 
 ```plaintext

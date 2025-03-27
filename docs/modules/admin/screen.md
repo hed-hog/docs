@@ -1,6 +1,6 @@
-# Screen Module
+# Screen
 
-**Hedhog Screen** module is part of the HedHog framework and provides functionalities for managing screens in your application. It offers a set of RESTful API endpoints and service methods to handle CRUD operations and pagination for screens.
+**Hedhog Screen** submodule is part of the HedHog framework and provides functionalities for managing screens in your application. It offers a set of RESTful API endpoints and service methods to handle CRUD operations and pagination for screens.
 
 ### Features
 

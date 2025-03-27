@@ -1,4 +1,4 @@
-# Payment Value Submodule
+# Payment Value
 
 The **Payment Value** submodule manages the values associated with payments, allowing for creating, retrieving, updating, and deleting payment values. It provides a simple interface to associate specific values with payments and supports pagination for listing these values.
 

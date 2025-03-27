@@ -1,6 +1,6 @@
-# Chat Message Module
+# Chat Message
 
-The **Chat Message** module provides functionality for managing chat messages in the system. It allows for the creation, retrieval, updating, and deletion of chat messages, along with paginated listing for easier management. This module is ideal for applications with messaging systems, such as customer support or real-time communication platforms.
+The **Chat Message** submodule provides functionality for managing chat messages in the system. It allows for the creation, retrieval, updating, and deletion of chat messages, along with paginated listing for easier management. This submodule is ideal for applications with messaging systems, such as customer support or real-time communication platforms.
 
 ### Features
 

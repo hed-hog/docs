@@ -1,4 +1,4 @@
-# Payment Status Submodule
+# Payment Status
 
 The **Payment Status** submodule is designed to manage the various statuses associated with payments. It allows for the creation, updating, deletion, and retrieval of payment statuses, ensuring accurate tracking of payment state across different stages of processing.
 

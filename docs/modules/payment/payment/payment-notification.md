@@ -1,4 +1,4 @@
-# Payment Notification Submodule
+# Payment Notification
 
 The **Payment Notification** submodule manages notifications associated with payments. It allows for creating, retrieving, updating, and deleting notifications related to specific payments. The submodule also supports pagination for listing notifications.
 

@@ -1,6 +1,6 @@
-# User Module
+# User
 
-The **Hedhog User** module in HedHog provides functionality to manage user data within an application. This module leverages the HedHog framework components, including pagination and [**Prisma**](https://www.prisma.io/) integration, to offer a robust user management system.
+The **Hedhog User** submodule in HedHog provides functionality to manage user data within an application. This submodule leverages the HedHog framework components, including pagination and [**Prisma**](https://www.prisma.io/) integration, to offer a robust user management system.
 
 ### Integrations
 

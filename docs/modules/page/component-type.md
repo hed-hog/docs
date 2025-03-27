@@ -1,4 +1,4 @@
-# Component Type Submodule
+# Component Type
 
 The **Component Type** submodule provides functionality for managing the types of components in your application. This submodule allows you to define and manipulate component types, enabling a structured approach to organizing and categorizing components in your system. With built-in support for localization, pagination, and flexible management of component types, it provides the tools needed to ensure a scalable and consistent architecture.
 

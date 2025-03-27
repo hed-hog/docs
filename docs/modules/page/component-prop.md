@@ -1,4 +1,4 @@
-# Component Prop Submodule
+# Component Prop
 
 The **Component Prop** submodule provides functionality for managing properties of components. In many cases, components in an application will have specific properties that define their behavior, appearance, or functionality. This submodule allows you to manage these properties effectively, supporting operations like creating, updating, deleting, and retrieving component properties with full pagination and search capabilities.
 

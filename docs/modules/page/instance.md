@@ -1,4 +1,4 @@
-# Instance Submodule
+# Instance
 
 The **Instance** submodule provides functionality for managing instances within your system. Instances represent specific occurrences or components within the application and are associated with different attributes such as visibility, order, and components. This submodule enables the creation, updating, deletion, and retrieval of instances, offering a clean and efficient approach to managing these entities.
 

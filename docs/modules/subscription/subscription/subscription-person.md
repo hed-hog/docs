@@ -1,4 +1,4 @@
-# Subscription Person Submodule
+# Subscription Person
 
 The **Subscription Person** submodule manages the association of people with specific subscriptions. It allows creating, updating, retrieving, and deleting people linked to subscriptions, including their roles.
 

@@ -45,6 +45,21 @@ To install the `@hedhog/file` module, use the following command:
 npm i @hedhog/file
 ```
 
+### Usage
+
+Once installed, you can integrate the File module into your project to quickly set up and manage file-related operations.
+
+```typescript
+import { FileModule } from "@hedhog/file";
+
+@Module({
+  imports: [FileModule],
+})
+export class AppModule {}
+```
+
+By importing the FileModule, you gain access to all the functionality provided by the module, making it easier to manage file-related operations such as uploading, downloading, and deleting files across various storage providers.
+
 ### Folder Structure
 
 ```plaintext

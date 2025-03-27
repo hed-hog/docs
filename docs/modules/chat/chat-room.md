@@ -1,6 +1,6 @@
-# Chat Room Module
+# Chat Room
 
-The **Chat Room** module manages the creation, modification, and deletion of chat rooms. It also allows for retrieving information about existing chat rooms and supports pagination for listing chat rooms.
+The **Chat Room** submodule manages the creation, modification, and deletion of chat rooms. It also allows for retrieving information about existing chat rooms and supports pagination for listing chat rooms.
 
 ### Features
 

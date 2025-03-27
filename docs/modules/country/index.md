@@ -4,15 +4,19 @@
 
 ### Controller Endpoints
 
-#### `GET /country`
-
-- **Description**: Retrieves a list of all countries.
+- `GET /country`: Retrieves a list of all countries.
 
 ### Service Methods
 
-#### `list()`
+- `list()`: Retrieves all countries from the database.
 
-- **Description**: Retrieves all countries from the database.
+### Folder Structure
+
+```plaintext
+|── country.controller.ts        # Controller for country
+|── country.module.ts            # Module definition for country
+|── country.service.ts           # Service class for country logic
+```
 
 ### Installation
 
@@ -22,10 +26,17 @@ To install the `@hedhog/country` module, use the following command:
 npm i @hedhog/country
 ```
 
-### Folder Structure
+### Usage
 
-```plaintext
-|── country.controller.ts        # Controller for country
-|── country.module.ts            # Module definition for country
-|── country.service.ts           # Service class for country logic
+Once installed, you can integrate the Country module into your project to quickly set up and manage essential features for handling country data.
+
+```typescript
+import { CountryModule } from "@hedhog/country";
+
+@Module({
+  imports: [CountryModule],
+})
+export class AppModule {}
 ```
+
+By importing the CountryModule, you gain access to all the functionality provided by the module, making it easier to retrieve and manage country information.

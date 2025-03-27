@@ -1,4 +1,4 @@
-# Payment Method Submodule
+# Payment Method
 
 The **Payment Method** submodule manages various payment methods available in the system. It allows for the creation, updating, deletion, and retrieval of payment methods, facilitating the integration of different payment options.
 

@@ -1,6 +1,6 @@
-# Subscription Cancel Submodule
+# Subscription Cancel
 
-The **Subscription Cancel Submodule** is designed to manage the cancellation of subscriptions, allowing users to specify reasons for cancellation, add comments, and track the status of subscription cancellations. This module integrates with a Prisma database for persistence and uses localization and pagination services to handle data retrieval efficiently.
+The **Subscription Cancel** submodule is designed to manage the cancellation of subscriptions, allowing users to specify reasons for cancellation, add comments, and track the status of subscription cancellations. This module integrates with a Prisma database for persistence and uses localization and pagination services to handle data retrieval efficiently.
 
 ### Features
 

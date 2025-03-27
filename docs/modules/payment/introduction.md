@@ -27,6 +27,29 @@ The **@hedhog/payment** module includes the following submodules:
 - **Payment Notification**: Handles the notifications related to payments, including success, failure, or status change- This submodule ensures that users are notified of important updates regarding their payment processes.
 - **Payment Status**: Tracks the status of specific payment items or payments themselves, providing up-to-date status information for various parts of the payment process.
 
+### Installation
+
+To install the `@hedhog/payment` module, use the following command:
+
+```bash
+npm i @hedhog/payment
+```
+
+### Usage
+
+Once installed, you can integrate the Payment module into your project to manage payment-related operations seamlessly.
+
+```typescript
+import { PaymentModule } from "@hedhog/payment";
+
+@Module({
+  imports: [PaymentModule],
+})
+export class AppModule {}
+```
+
+By importing the `PaymentModule`, you gain access to all the functionality provided by the module, including managing payment records, handling payment methods, and tracking payment statuses. This makes it easier to handle payment workflows and streamline payment-related operations in your application.
+
 ---
 
 This module is ideal for developers looking to integrate and manage payments in their application- It provides the necessary tools and structure to handle payment processing effectively while offering flexibility for different business use cases.

@@ -26,11 +26,26 @@ The **Appearance Module** allows users to customize and override the styles of t
 
 ### Installation
 
-To install the `@hedhog/locale` module, use the following command:
+To install the `@hedhog/appearance` module, use the following command:
 
 ```bash
-npm i @hedhog/locale
+npm i @hedhog/appearance
 ```
+
+### Usage
+
+Once installed, you can integrate the Appearance module into your project to quickly set up and manage essential features for your admin interface.
+
+```typescript
+import { AppearanceModule } from "@hedhog/appearance";
+
+@Module({
+  imports: [AppearanceModule],
+})
+export class AppModule {}
+```
+
+By importing the AppearanceModule, you gain access to all the functionality provided by the module, making it easier to manage interface styling.
 
 ### Folder Structure
 
