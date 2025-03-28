@@ -19,6 +19,10 @@ tables: # Root property representing the tables in the database
         type: column_type # Data type of the column
         length: column_length # Optional, only for certain types
         isPrimary: true_or_false # Indicates if the column is a primary key
+        locale: # Defines the localized names for the column - frontend effect only
+          en: English Name # English name for the column
+          pt: Nome em Portugues # Portuguese name for the column
+        # The 'locale' property is used to format the field name as a label in the input, ensuring proper localization.
         references: # Optional, used for foreign keys
           table: referenced_table_name
           column: referenced_column_name
@@ -63,7 +67,7 @@ Column Properties
 |------------|---------------------------------------------------------------------------------------------------------|
 | `name` | The name of the column. |
 | `type` | The data type of the column. Common types include `varchar`, `int`, `boolean`, `timestamp`, etc. |
-| `length` | (Optional) The maximum length of the column, applicable for string types (e.g., `varchar`). |
+| `locale` | (Optional) An object defining localized names for the column. This is used for frontend display purposes. |
 | `isPrimary`| (Optional) A boolean value indicating whether the column is a primary key. |
 | `references`| (Optional) An object defining foreign key constraints. |
 | `table` | The name of the referenced table. |

@@ -56,6 +56,7 @@ By importing the FAQModule, you gain access to all the functionality provided by
 ├── faq.controller.ts      # Defines routes for FAQ management
 ├── faq.service.ts         # Contains business logic for FAQ management
 ├── faq.module.ts          # FAQ module setup
+├── index.ts               # Entry file
 ├── dto
 │   ├── create.dto.ts      # DTO for creating new FAQ entries
 │   ├── update.dto.ts      # DTO for updating FAQ entries

@@ -61,9 +61,9 @@ By importing the `ProfileModule`, you gain access to all the functionality provi
 │   ├── signup.dto.ts           # DTO for user sign-up
 │   └── update.dto.ts           # DTO for updating user data
 ├── emails
-│   ├── index.ts    # Entry file
-│   ├── lib.ts             # For managing email templates and sending emails
-│   └── templates.ts       # Predefined email templates for account updates and closures
+│   ├── index.ts                # Entry file
+│   ├── lib.ts                  # For managing email templates and sending emails
+│   └── templates.ts            # Predefined email templates for account updates and closures
 ├── validations
 │   └── cpf.ts                 # CPF validation logic
 ```

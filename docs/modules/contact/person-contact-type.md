@@ -78,6 +78,7 @@
 │   ├── create.dto.ts                 # DTO for creating person-contact-types
 │   └── update.dto.ts                 # DTO for updating person-contact-types
 |── person-contact-type.controller.ts        # Controller for person-contact-type
+|── person-contact-type.enum.ts              # Enum definitions for person-contact-type
 |── person-contact-type.module.ts            # Module definition for person-contact-type
 |── person-contact-type.service.ts           # Service class for person-contact-type logic
 ```

@@ -39,7 +39,3 @@ The service layer provides the following methods for managing subscriptions:
 │   ├── create.dto.ts                  # DTO for creating a subscription
 │   ├── update.dto.ts                  # DTO for updating a subscription
 ```
-
----
-
-Let me know if you'd like any further modifications!

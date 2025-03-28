@@ -63,24 +63,16 @@ mailService
 ## Folder Structure
 
 ```plaintext
-mail/
-├── dist/                        # Compiled JavaScript files from build
-├── node_modules/                # Discardable folder with all module dependencies
-├── src/
-│   ├── mail.service.ts           # Email sending service
-│   ├── mail.module.ts            # Module for MailService
-│   └── mail.consts.ts            # Constants related to email sending
-│   ├── mail.service.spec.ts      # Unit tests for MailService
-│   └── mail.template.ejs         # Email templates in EJS format
-│   ├── index.ts                  # Entry point for mail files
-│   ├── interfaces/
-│   │   └── mail-module-options.interface.ts # Interface for configuration options
-│   ├── enums/
-│   │   └── mail-configuration-type.enum.ts # Enum for email configuration types
-├── .gitignore                     # Specifies which files Git should ignore
-├── package.json                   # Manages dependencies and scripts for the library
-├── package-lock.json              # Lock file for dependencies
-├── README.md                      # Documentation for the library
-└── tsconfig.lib.json              # TypeScript configuration for the library
-└── tsconfig.production.json       # TypeScript configuration for production builds
+├── mail.service.ts           # Email sending service
+├── mail.module.ts            # Module for MailService
+└── mail.consts.ts            # Constants related to email sending
+├── mail.service.spec.ts      # Unit tests for MailService
+└── mail.template.ejs         # Email templates in EJS format
+├── index.ts                  # Entry point for mail files
+├── interfaces/
+│   ├── mail-module-options.interface.ts # Interface for configuration options
+│   ├── mail-type.ts                     # Type definitions for mail-related entities
+│   └── index.ts                         # Barrel file for exporting interfaces
+├── enums/
+│   └── mail-configuration-type.enum.ts # Enum for email configuration types
 ```

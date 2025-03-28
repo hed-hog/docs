@@ -66,6 +66,7 @@ By importing the FileModule, you gain access to all the functionality provided b
 ├── file.controller.ts       # Defines routes for file management
 ├── file.service.ts          # Contains business logic for file management
 ├── file.module.ts           # File module setup
+├── index.ts                 # Entry file
 ├── dto
 │   ├── delete.dto.ts        # DTO for deleting files
 ├── provider

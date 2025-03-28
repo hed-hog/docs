@@ -57,13 +57,16 @@ The `AuthService` provides methods for:
 ├── auth.service.ts            # Contains authentication logic
 ├── auth.service.spec.ts       # Testing file for auth service
 ├── auth.module.ts             # Authentication module
+├── consts/
+│   └── body.consts.ts         # Constants used in authentication
 ├── dto/
+│   ├── change.dto.ts          # Data Transfer Object for password change
+│   ├── create-user.dto.ts     # Data Transfer Object for user creation
+│   ├── email.dto.ts           # Data Transfer Object for email change
 │   ├── forget.dto.ts          # Data Transfer Object for password reset
 │   ├── login.dto.ts           # Data Transfer Object for login
 │   └── otp.dto.ts             # Data Transfer Object for OTP verification
-├── decorators/
-│   ├── public.decorator.ts    # Custom decorator to mark public routes
-│   └── user.decorator.ts      # Custom decorator to get user from request
+│   ├── reset.dto.ts           # Data Transfer Object for password reset using a code
 ├── types/
 │   └── user.type.ts           # Type definitions for user-related data
 ├── enums/

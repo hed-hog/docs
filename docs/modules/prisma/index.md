@@ -11,14 +11,6 @@ The Hedhog Prisma module is designed to simplify interactions with Prisma by add
 - **Database Connection Management**: Automatically connects to the database when the module is initialized.
 - **Provider Detection**: Provides methods to detect the type of database provider being used (e.g., [**PostgreSQL**](https://www.postgresql.org/) or [**MySQL**](https://www.mysql.com/)).
 
-## Installation
-
-This library is an integral part of the HedHog framework and should be installed as a dependency in your HedHog project. Ensure that the necessary dependencies are configured in your HedHog project.
-
-```bash
-npm i @hedhog/prisma
-```
-
 ## Methods
 
 **onModuleInit()**: Automatically connects to the database when the module initializes.
@@ -32,18 +24,57 @@ npm i @hedhog/prisma
 ## Folder Structure
 
 ```plaintext
-prisma/
-├── dist/                        # Compiled JavaScript files from build
-├── node_modules/                # Discardable folder with all module dependencies
-├── src/
-│   ├── index.ts                  # Entry point for PrismaService
-│   ├── prisma.module.ts          # Module definition (if needed)
-│   └── prisma.service.ts         # Service class extending PrismaClient
-│   ├── prisma.service.spec.ts    # Unit tests for PrismaService
-├── .gitignore                    # Specifies which files Git should ignore
-├── package.json                  # Manages dependencies and scripts for the library
-├── package-lock.json             # Lock file for dependencies
-├── README.md                     # Documentation for the library
-├── tsconfig.lib.json             # TypeScript configuration for library builds
-├── tsconfig.production.json      # TypeScript configuration for production builds
+├── index.ts                  # Entry point for PrismaService
+├── prisma.module.ts          # Module definition (if needed)
+└── prisma.service.ts         # Service class extending PrismaClient
 ```
+
+## Installation
+
+This library is an integral part of the HedHog framework and should be installed as a dependency in your HedHog project. Ensure that the necessary dependencies are configured in your HedHog project.
+
+```bash
+npm i @hedhog/prisma
+```
+
+## Usage
+
+After installed and imported @hedhog/prisma, to use it in your project, follow these steps:
+
+1. **Import the PrismaService**:
+   Import the `PrismaService` from the module into your service or controller.
+
+   ```typescript
+   import { PrismaService } from "@hedhog/prisma";
+   ```
+
+2. **Inject the PrismaService**:
+   Use dependency injection to include the `PrismaService` in your class.
+
+   ```typescript
+   import { Injectable } from "@nestjs/common";
+   import { PrismaService } from "@hedhog/prisma";
+
+   @Injectable()
+   export class ExampleService {
+     constructor(private readonly prisma: PrismaService) {}
+
+     async getUsers() {
+       return this.prisma.user.findMany();
+     }
+   }
+   ```
+
+3. **Use the Extended Methods**:
+   Utilize the additional methods provided by the module to interact with the database.
+
+   ```typescript
+   const provider = this.prisma.getProvider();
+   console.log(`Database provider: ${provider}`);
+
+   if (this.prisma.isPostgres()) {
+     console.log("Using PostgreSQL database");
+   }
+   ```
+
+This module simplifies database interactions and ensures seamless integration with HedHog projects.

@@ -42,7 +42,3 @@ The service layer offers the following methods for managing payment statuses:
 │   ├── create.dto.ts                    # DTO for creating payment statuses
 │   ├── update.dto.ts                    # DTO for updating payment statuses
 ```
-
----
-
-This README will guide you in integrating and managing payment statuses efficiently. Let me know if you need further details or modifications!

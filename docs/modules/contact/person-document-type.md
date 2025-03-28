@@ -77,6 +77,7 @@ The **Person Document Type** module manages document type definitions used for c
 │   ├── create.dto.ts                 # DTO for creating a person-document type
 │   ├── update.dto.ts                 # DTO for updating a person-document type
 |── person-document-type.controller.ts       # Controller for person-document type routes
+|── person-document-type.enum.ts             # Enum definitions for person-document-type
 |── person-document-type.module.ts           # Module definition for person-document types
 |── person-document-type.service.ts          # Service class for person-document type operations
 ```

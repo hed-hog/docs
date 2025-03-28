@@ -31,8 +31,8 @@ The service layer provides the following methods for managing subscription plan 
 ### Folder Structure
 
 ```plaintext
-├── subscription-plan-gateway.controller.ts    # Controller for handling subscription plan gateway endpoints
-├── subscription-plan-gateway.service.ts       # Service for managing subscription plan gateway configurations
+├── subscription-plan-gateway.controller.ts    # Controller for handling subscription plan gateway
+├── subscription-plan-gateway.service.ts       # Service for managing subscription plan gateway
 ├── dto
 │   ├── create.dto.ts                          # DTO for creating a subscription plan gateway
 │   ├── update.dto.ts                          # DTO for updating a subscription plan gateway

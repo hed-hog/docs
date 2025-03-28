@@ -202,8 +202,6 @@
 ### Folder Structure
 
 ```plaintext
-├── decorators/
-│   ├── role.decorator.ts    # Custom decorator for roles
 ├── dto/                        # Data Transfer Objects
 │   ├── create.dto.ts           # DTO for creating a role
 │   ├── update.dto.ts           # DTO for updating a role

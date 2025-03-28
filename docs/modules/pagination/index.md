@@ -20,30 +20,31 @@ npm i @hedhog/pagination
 ## Folder Structure
 
 ```plaintext
-pagination/
-├── dist/                        # Compiled JavaScript files from build
-├── node_modules/                # Discardable folder with all module dependencies
-├── src/
-│   ├── constants/
-│   │   └── pagination.constants.ts # Constants related to pagination
-│   ├── decorator/
-│   │   └── pagination.decorator.ts # Decorators for pagination
-│   ├── dto/
-│   │   └── pagination.dto.ts      # Data Transfer Object for pagination parameters
-│   ├── enums/
-│   │   └── pagination.enums.ts    # Enums for pagination
-│   ├── types/
-│   │   └── pagination.types.ts    # Type definitions for pagination
-│   ├── index.ts                  # Entry point for pagination files
-│   ├── pagination.module.ts      # Module definition for pagination functionalities
-│   ├── pagination.service.spec.ts # Unit tests for PaginationService
-│   └── pagination.service.ts     # Service class for pagination logic
-├── .gitignore                    # Specifies which files Git should ignore
-├── package.json                  # Manages dependencies and scripts for the library
-├── package-lock.json             # Lock file for dependencies
-├── README.md                     # Documentation for the library
-├── tsconfig.lib.json             # TypeScript configuration for library builds
-├── tsconfig.production.json      # TypeScript configuration for production builds
+
+├── constants/
+│   └── pagination.constants.ts # Constants related to pagination
+├── databases/
+│   ├── abstract.database.ts   # Abstract class for database implementations
+│   ├── database.factory.ts    # Factory for creating database instances
+│   ├── database.ts            # Base database class
+│   ├── index.ts               # Entry point for database files
+│   ├── mysql.database.ts      # MySQL database implementation
+│   └── postgres.database.ts   # PostgreSQL database implementation
+├── decorator/
+│   └── pagination.decorator.ts # Decorators for pagination
+├── dto/
+│   └── pagination.dto.ts      # Data Transfer Object for pagination parameters
+├── enums/
+│   └── pagination.enums.ts    # Enums for pagination
+├── types/
+│   └── pagination.types.ts    # Type definitions for pagination
+│   ├── query-option.ts         # Type definitions for query options
+│   ├── relation-n2n-result.ts  # Type definitions for many-to-many relation results
+│   └── transaction-queries.ts  # Type definitions for transaction queries
+├── index.ts                  # Entry point for pagination files
+├── pagination.module.ts      # Module definition for pagination functionalities
+├── pagination.service.spec.ts # Unit tests for PaginationService
+└── pagination.service.ts     # Service class for pagination logic
 ```
 
 ## Usage Example

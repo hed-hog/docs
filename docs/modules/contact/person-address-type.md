@@ -78,6 +78,7 @@
 │   ├── create.dto.ts                 # DTO for creating person-address types
 │   └── update.dto.ts                 # DTO for updating person-address types
 |── person-address-type.controller.ts        # Controller for person-address-type
+|── person-address-type.enum.ts              # Enum definitions for person-address-type
 |── person-address-type.module.ts            # Module definition for person-address-type
 |── person-address-type.service.ts           # Service class for person-address-type logic
 ```

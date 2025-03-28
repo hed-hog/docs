@@ -28,6 +28,7 @@ npm i @hedhog/rabbitmq
 ### Folder Structure
 
 ```plaintext
+├── index.ts                 # Entry file
 ├── rabbitmq.service.ts      # Contains the logic for RabbitMQ connection and messaging
 ├── rabbitmq.module.ts       # Configures the RabbitMQ service in the NestJS application
 ├── rabbitmq.consts.ts       # Defines constants like RABBITMQ_MODULE_OPTIONS

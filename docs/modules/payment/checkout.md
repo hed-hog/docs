@@ -73,7 +73,7 @@ Here's the updated version with the function names, arguments, and descriptions 
 ```
 ├── checkout.controller.ts        # Handles the HTTP requests and routes for the checkout functionality
 └── checkout.module.ts            # Main module to integrate everything together
-└── checkout.service.ts           # Business logic for managing payments, subscriptions, and related processes
+└── checkout.service.ts           # Business logic for managing payments, subscriptions, and related
 ├── provider/
 │   ├── abstract.provider.ts        # Abstract base class for payment providers
 │   ├── mercado-pago.provider.ts    # Integration with Mercado Pago payment gateway

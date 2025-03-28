@@ -167,7 +167,8 @@ By importing the `LocaleModule`, you gain access to all the functionality provid
 |── dto/                         # Data Transfer Objects
 │   ├── create.dto.ts            # DTO for creating locales
 │   ├── delete.dto.ts            # DTO for deleting locales
-│   └── update.dto.ts            # DTO for updating locales
+│   ├── set-enabled.dto.ts       # DTO for setting enabled locales
+│   ├── with-locale.dto.ts       # DTO for operations with locale data
 |── locale.controller.ts         # Controller for locales
 |── locale.decorator.ts          # Decorator for injecting locale into requests
 |── locale.middleware.ts         # Middleware to handle locale-specific processing

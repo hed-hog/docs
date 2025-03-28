@@ -141,8 +141,10 @@ By importing the `SettingModule`, you gain access to all the functionality provi
 │   |── create.dto.ts        # DTO for creating settings
 │   |── delete.dto.ts        # DTO for deleting settings
 │   |── update.dto.ts        # DTO for updating settings
+│   |── setting.dto.ts       # DTO for setting data
+│   |── setting-user.dto.ts  # DTO for setting-user relationships
 |── setting.controller.ts    # Controller for settings
 |── setting.module.ts        # Module definition for settings
 |── setting.service.ts       # Service class for settings logic
-|── setting.service.spec.ts  # Testing file for setting service
+|── index.ts                 # Entry file
 ```
